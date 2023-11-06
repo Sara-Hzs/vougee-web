@@ -1,0 +1,71 @@
+/**
+ * Header Styling:
+ * Represents the main header for the application.
+ * - Features a centered logo, a navigation menu, and a Contact Us button.
+ */
+
+// Base Variables
+$background-color: #f0f0f0;
+$text-color: #333333;
+$button-color: #bbd93a;
+$button-text-color: #4a4a4a;
+$transition-speed: 0.3s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 150px;
+  background-color: $background-color;
+  color: $text-color;
+  z-index: 1;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+
+  .logo-container {
+    .logo {
+      max-width: 100px;
+      height: auto;
+    }
+  }
+  .nav-container {
+    ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+      padding: 0;
+
+      li {
+        a {
+          text-decoration: none;
+          color: inherit;
+          transition: color $transition-speed;
+
+          &:hover {
+            color: darken($text-color, 10%);
+          }
+        }
+      }
+    }
+  }
+  .btn-container {
+    .contact-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: $button-color;
+      color: $button-text-color;
+      cursor: pointer;
+      transition: background-color $transition-speed;
+
+      &:hover {
+        background-color: darken($button-color, 10%);
+      }
+    }
+  }
+}
+
+

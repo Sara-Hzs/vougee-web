@@ -1,0 +1,212 @@
+/*
+   CubeBanner Styling:
+   SVG positioning at the bottom, text
+   and image formatting in the info section,
+   and responsive design .
+*/
+
+
+// Color Variables
+$color-gradient-start: #363f24;
+$color-gradient-end: #475d17;
+$color-btn-border: #758c0f;
+$color-btn-bg-hover: #475321;
+$color-vertical-bar: #475321;
+$color-text: #fff;
+
+// Typography Variables
+$font-family-primary: "MuseoSansRounded", "Inter", sans-serif;
+$font-size-btn: clamp(0.8rem, 2.5vw, 1rem);
+$font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
+
+
+
+
+
+.CubeBanner {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient($color-gradient-start, $color-gradient-end);
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+
+
+
+  .Btn,
+  .infoSection,
+  .imageSection,
+  .curvy {
+    z-index: 1;
+  }
+
+  .Btn {
+    border: 3px solid #758c0f;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem;
+    font-size: $font-size-btn;
+    color: $color-btn-border;
+    &:hover {
+      background-color: #475321;
+      color: $color-text;
+    }
+  }
+
+  h1, h2, h3, p {
+    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+  }
+}
+
+
+.verticalBar {
+  position: absolute;
+  left: 2%;
+  top: 35%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
+  & span {
+    color: $color-vertical-bar;
+    font-weight: bold;
+    font-size: clamp(0.6rem, 1.5vw, 1rem);
+  }
+}
+
+.segment {
+  width: 8px;
+  background-color: $color-vertical-bar;
+  margin: 2px 0;
+
+  &.segment1 { height: 113px; }
+  &.segment2 { height: 16px; }
+  &.segment3 { height: 7px; }
+  &.segment4,
+  &.segment5 { height: 2px; }
+}
+
+.verticalLine {
+  width: 2px;
+  height: 30vh;
+  background-color: $color-vertical-bar;
+
+}
+
+.barText {
+  font-size: 0.8rem;
+  color: $color-vertical-bar;
+  margin-top: 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.verticalBarRight {
+  position: absolute;
+  right: 2%;
+  top: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  z-index: 2;
+}
+.verticalBarRight .segment.segment1{
+  height: 113px;
+  width: 8px;
+  background-color: $color-vertical-bar;
+}
+.verticalBarRight .segment.segment2{
+  height: 16px;
+  width: 8px;
+  background-color: $color-vertical-bar;
+  margin: 2px 0;
+}
+.verticalBarRight .segment.segment3{
+  height: 7px;
+  width: 8px;
+  background-color:$color-vertical-bar;
+  margin: 2px 0;
+}
+.verticalBarRight .segment.segment4{
+  height: 2px;
+  width: 8px;
+  background-color: $color-vertical-bar;
+  margin: 2px 0;
+}
+.verticalBarRight .segment.segment5{
+  height: 2px;
+  width: 8px;
+  background-color: $color-vertical-bar;
+  margin: 2px 0;
+}
+.curvy {
+  position: absolute;
+  bottom: -70%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.Btn {
+  position: absolute;
+  left: 12vw;
+  top: 8vw;
+  background-color: transparent;
+  color: #bbd93a;
+  padding: 6px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.infoSection h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 10vw;
+  color: $color-text;
+}
+.infoSection p {
+  font-size: 1rem;
+  padding-left: 10vw;
+  color: $color-text;
+}
+.imageSection img {
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 769px) {
+  .CubeBanner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .infoSection {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  .imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #455725;
+  }
+}
+
+@media (max-width: 768px){
+  .Btn {
+    position: absolute;
+    top: 85vw;
+    left: 15vw;
+    z-index: 2;
+  }
+
+  .infoSection{
+    padding-bottom: 12vw;
+  }
+
+  .infoSection h1 {
+    margin-top: 2rem;
+  }
+}

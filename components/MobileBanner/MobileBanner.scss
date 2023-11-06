@@ -1,0 +1,163 @@
+/*
+ * MobileBanner  Styling:
+   It's a responsive component. It displays the content in a column-reverse
+ * layout, center-aligning its child elements. As screen size increases, its layout switches to a row format.
+ * Specific styles for h1, h3, p, and the image section are defined for aesthetic and layout purposes.
+ */
+
+.MobileBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 22vw;
+  z-index: 2;
+  background-color: #fdfdfd;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+
+  .ourServiceBtn {
+    position: absolute;
+    left: 15vw;
+    top: 1vw;
+    background-color: transparent;
+    color: #16171c;
+    padding: 6px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  h1, h3, p {
+    align-self: flex-start;
+    padding-left: 15vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    margin-bottom: 6vw;
+    margin-top: 12vw;
+  }
+  .divider{
+    display: none;
+  }
+  p {
+    font-size: 1rem;
+    padding-bottom: 4vw;
+    width: 80%;
+  }
+  .imageSection {
+    width: 100%;
+    padding-left: 9vw;
+    img {
+      width: 90%;
+      margin-top: 2vw;
+    }
+  }
+  .rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .circle {
+      display: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #c1c1c2;
+    }
+    .topLine, .bottomLine {
+      display: none;
+    }
+    .numbers {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #8d8c8c;
+      padding-bottom: 3vw;
+      span {
+        margin: 0 1vw;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    margin-top: 140px;
+    padding-bottom: 12vw;
+    padding-top: 4vw;
+    .imageSection {
+      position: absolute;
+      right: 5vw;
+      top: 1vw;
+      max-width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 700px;
+      }
+    }
+    .divider {
+      display: block;
+      align-self: flex-start;
+      margin-left: 15vw;
+      background-color: #c1c1c2;
+      width: 2px;
+      height: 90px;
+      margin-bottom: 1vw;
+    }
+    h3 {
+      margin-bottom: 2vw;
+      margin-top: 2vw;
+    }
+    h1{
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+    }
+    p {
+      width: 50%;
+
+    }
+    .rightSection {
+      position: absolute;
+      right: 5vw;
+      top: 1vw;
+      flex-direction: column;
+
+      .circle {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #c1c1c2;
+        background-color: transparent;
+      }
+
+      .topCircle {
+        margin-bottom: -10px;
+      }
+
+      .bottomCircle {
+        margin-top: -10px;
+      }
+
+      .topLine, .bottomLine {
+        display: block;
+        height: 8vw;
+        width: 2px;
+        background-color: #c1c1c2;
+      }
+
+
+
+      .numbers {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+
+        span {
+          margin: 1vw 0;
+
+        }
+      }
+    }
+  }
+}

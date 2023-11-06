@@ -1,0 +1,152 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10vw;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+  background-color: #f0f0f0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+
+
+
+  .column-left, .column-middle, .column-right {
+    flex: 1;
+    padding: 0 30px;
+  }
+
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    padding-right: 12vw;
+
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      img {
+        width: 160px;
+        height: 108px;
+      }
+    }
+
+    .footer-rights {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 8px 0;
+    padding-bottom: 1vw;
+  }
+
+  .oval-button {
+    background-color: #bbd93a;
+    color: #3b3d31;
+    border: none;
+    padding: 10px 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 8vw;
+    width: 50%;
+    font-weight: bold;
+    box-shadow: 0 15px 12px 0 rgb(225, 235, 185);
+
+    &:hover {
+      background-color: #66a632;
+    }
+  }
+
+  .column-middle, .column-right {
+    padding-top: 8vw;
+    padding-bottom: 1vw;
+  }
+
+  .footer-contact, .footer-social {
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+
+
+        svg {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+          path {
+            fill: #eeeeee;
+            stroke: #000000;
+            stroke-width: 10;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-social {
+    div {
+      display: flex;
+      gap: 15px;
+
+      .icon-circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #bad73a;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          color: #000000;
+        }
+
+        &:hover {
+          background-color: #66a632;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .column-left, .column-middle, .column-right {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .footer-social div {
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}
