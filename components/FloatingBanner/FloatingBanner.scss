@@ -7,9 +7,8 @@ $color-curve: #363f24;
 
 // Typography Variables
 $font-primary: "MuseoSansRounded", "Inter", sans-serif;
-$font-size-title: 48px;
-$font-size-text: 1.5rem;
-$font-size-text-responsive: clamp(0.8rem, 1.3vw, $font-size-text);
+$font-size-title: clamp(1rem, 5vw, 2.3rem);
+$font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
 
 
 .curvyLine {
@@ -30,88 +29,91 @@ $font-size-text-responsive: clamp(0.8rem, 1.3vw, $font-size-text);
 }
 
 
+
 .infoContainer {
   position: relative;
   z-index: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1% 2%;
+  flex-direction: column; // Default to single column layout
+  align-items: center; // Center children
+  padding: 1% 4%;
   background-color: $color-background-info;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
-  height: auto;
+  border-radius: 20px;
   transform: translateY(-5%);
 
-  img {
-    max-width: 50%;
-    width: 100%;
-    margin-right: 3rem;
+  > img {
+    width: clamp(90%, 25vw + 15%, 80%);
+    height: auto;
+    margin-bottom: 1rem;
   }
 
   > div {
     width: 100%;
-
-    .infoButton {
-      position: absolute;
-      top: 6vw;
-      background-color: transparent;
-      color: $color-text-primary;
-      padding: 5px 20px;
-      border-radius: 50px;
-      cursor: pointer;
-    }
-    .verticalLine {
-      position: absolute;
-      left: 51.1%;
-      top: 0;
-      height: 3vw;
-      width: 1px;
-      background-color: $color-line;
-      transform: translateX(-50%);
-    }
-    h3 {
-      padding-top: 96px;
-      font-size: $font-size-title;
-      font-weight: 600;
-      line-height: 52px;
-      text-align: left;
-    }
-
-    h3, p {
-      margin: 2vw 0;
-      white-space: normal;
-      width: 90%;
-    }
-
-    p {
-      font-size: $font-size-text-responsive;
-    }
-  }
-
-  @media (max-width: 768px) {
-    img {
-      max-width: 100%;
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-    .verticalLine{
-      display: none;
-    }
-  }
-
-  @media (min-width: 769px) {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    padding-top: 1VW;
+    padding-bottom: 4vw;
+  }
 
-    img {
-      max-width: 45%;
+  .infoButton {
+    background-color: transparent;
+    color: $color-text-primary;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  h3 {
+    text-align: left;
+    font-size: $font-size-title;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    padding-top: 2vw;
+    text-align: left;
+  }
+
+}
+
+// Additional media query for larger screens if needed
+@media (min-width: 769px) {
+  .infoContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    > img {
+      width: 100%;
+      margin-bottom: 0;
     }
 
     > div {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      align-items: flex-start;
     }
+
+    .verticalLine {
+      position: absolute;
+      top: 0;
+      display: block;
+      left: 51%;
+      height: 3vw;
+      width: 1px;
+      background-color: $color-line;
+
+    }
+    .infoButton {
+
+      margin-top: 2rem;
+    }
+
   }
 }
