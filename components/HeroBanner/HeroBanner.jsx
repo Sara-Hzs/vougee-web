@@ -37,13 +37,13 @@ export const HeroBanner = () => {
             {/* For screens 768px and below */}
             <div className="layout-small">
                 <div className="a-text">UNLOCK <br/>THE FUTURE</div>
-                <div className="GridContainer-s"></div>
-                <div className="CenteredImage">
-                    <img src="/assets/HeroIllustration1.png" alt="Centered Illustration"/>
-                </div>
-                <div className="c-d-combined">
+                <div className="flex-row">
                     <div className="c-image">
                         <img src="/assets/round.png" alt="Round Illustration"/>
+                    </div>
+                    <div className="GridContainer-s"></div>
+                    <div className="CenteredImage">
+                        <img src="/assets/HeroIllustration1.png" alt="Centered Illustration"/>
                     </div>
                     <div className="d-text">
                         <div className="upper-words">
@@ -54,6 +54,9 @@ export const HeroBanner = () => {
                     </div>
                 </div>
                 <div className="b-text">
+                    <div className="c-image">
+                        <img src="/assets/round.png" alt="Round Illustration"/>
+                    </div>
                     VouGee is the expert on<br/>
                     Blockchain system solutions for<br/>
                     sustainable business and<br/>

@@ -34,8 +34,8 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
   position: relative;
   z-index: 2;
   display: flex;
-  flex-direction: column; // Default to single column layout
-  align-items: center; // Center children
+  flex-direction: column;
+  align-items: center;
   padding: 1% 4%;
   background-color: $color-background-info;
   width: 85%;
@@ -114,6 +114,7 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
 
       margin-top: 2rem;
     }
+
 
   }
 }
