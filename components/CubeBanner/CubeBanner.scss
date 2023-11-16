@@ -64,9 +64,15 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   &.segment4,
   &.segment5 { height: 2px; }
 }
-.verticalLine {
+.verticalBarRight .verticalLine {
   width: 2px;
   height: 24vh;
+  background-color: $color-vertical-bar;
+}
+
+.verticalBar .verticalLine{
+  width: 2px;
+  height: 40vh;
   background-color: $color-vertical-bar;
 }
 .barText {

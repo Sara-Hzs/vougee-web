@@ -4,21 +4,29 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding-top: 7vw;
+  padding-top: 10vw;
   padding-bottom: 5vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
+
 
 
   .textsWrapper {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 10vw;
+    align-items: stretch;
     width: 60%;
+    gap:  clamp(1.5rem, 2vw, 2rem);
   }
+  .textA{
+    font-size: clamp(1.8rem, 2vw, 3rem);
+    font-weight: 600;
+    width: 30%;
 
-  .textA, .textB {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+  .textB {
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    width: 100%;
+
   }
 
   .teamIllustration {
@@ -44,22 +52,21 @@
   }
   .ComicBanner .textsWrapper {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: left;
     gap: 2em;
     padding-left: 2%;
-    width: 90%;
+
   }
   .ComicBanner .teamIllustration {
     width: 90vw;
   }
 
-  .ComicBanner .textA , .ComicBanner .textB {
-
-    max-width: 100%;
+  .ComicBanner .textA, .ComicBanner .textB {
+    width: 90vw;
+    max-width: 90vw;
   }
   .ComicBanner .textA{
     padding-top: 10vw;
   }
-
 }

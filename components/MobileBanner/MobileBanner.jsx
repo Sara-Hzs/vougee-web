@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export const MobileBanner = () => {
-    const [activeSlide, setActiveSlide] = useState(1);  // Keep track of the active slide
+    const [activeSlide, setActiveSlide] = useState(1);
 
     const DefaultSlideContent = () => (
         <>
