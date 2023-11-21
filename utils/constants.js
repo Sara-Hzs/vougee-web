@@ -2,7 +2,7 @@ export const jobs_example = [
     {
         name: 'UX Designer',
         id: 'jbdsigbg',
-        description: 'obdfgirbgiberigbierbgberbgierbgiberigbierbgiberibgerjgpjrej',
+        description: 'Welcome to the first frame!',
         requirements: [
             'odsngog',
             'osnognog',
@@ -12,7 +12,7 @@ export const jobs_example = [
     {
         name: 'Data Scientist',
         id: 'jbdsigbg',
-        description: 'obdfgirbgiberigbierbgberbgierbgiberigbierbgiberibgerjgpjrej',
+        description: 'This is the second frame speaking!',
         requirements: [
             'odsngog',
             'osnognog',
@@ -22,7 +22,7 @@ export const jobs_example = [
     {
         name: 'React Developer',
         id: 'jbdsigbg',
-        description: 'obdfgirbgiberigbierbgberbgierbgiberigbierbgiberibgerjgpjrej',
+        description: 'Greetings from frame three!',
         requirements: [
             'odsngog',
             'osnognog',
@@ -32,7 +32,17 @@ export const jobs_example = [
     {
         name: 'Web Designer',
         id: 'jbdsigbg',
-        description: 'obdfgirbgiberigbierbgberbgierbgiberigbierbgiberibgerjgpjrej',
+        description: 'Four is a cool number, right?',
+        requirements: [
+            'odsngog',
+            'osnognog',
+            'osnosfpsaüfüp'
+        ]
+    },
+    {
+        name: 'Java Developer',
+        id: 'jbdsigbg',
+        description: 'High five from frame five!',
         requirements: [
             'odsngog',
             'osnognog',

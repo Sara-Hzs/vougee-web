@@ -18,14 +18,14 @@
     padding-bottom: 1vw;
 
     .headline-main {
-      font-size: clamp(24px, 5vw, 36px);
+      font-size: clamp(2rem, 5vw, 4rem);
       color: #fff;
       margin-bottom: 10px;
       text-align: center;
     }
 
     .headline-sub {
-      font-size: clamp(16px, 3vw, 20px);
+      font-size: clamp(0.8rem, 1vw, 1rem);
       color: #fff;
       margin-bottom: 20px;
       text-align: center;
@@ -37,15 +37,15 @@
     flex-direction: row-reverse;
     align-items: center;
     width: 100%;
-    padding-right: 7vw;
+    padding-right: 10vw;
 
     .frame {
-      width: 60px;
+      width: 4vw;
       height: 30vw;
       background-color: #fdfdfd;
       cursor: pointer;
-      transition: width 0.3s ease-in-out, height 0.5s ease-out;
-      margin-left: 5px;
+      transition: width 0.5s ease-in-out, height 0.5s ease-out;
+      margin-left: 10px;
       border-radius: 12px;
       position: relative;
 
@@ -57,7 +57,8 @@
         bottom: 60px;
         transform-origin: center;
         white-space: nowrap;
-        font-size: 16px;
+        font-size: clamp(1rem, 1vw, 2rem);
+        font-weight: bold;
         cursor: pointer;
       }
 
@@ -67,12 +68,33 @@
         left: 50%;
         transform: translateX(-50%);
         font-size: 18px;
+        color: #8d8c8c;
       }
 
       &.open {
-        position: relative; // Added this
-        width: 750px;
+        position: relative;
+        width: 50vw;
         height: 30vw;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 20px;
+          left: 50px;
+          right: 40px;
+          height: 2px;
+          background-color: #b3b3b3;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 40px;
+          left: 40px;
+          right: 200px;
+          height: 2px;
+          background-color:#b3b3b3;
+        }
 
 
         .number-title, .job-title, p {
@@ -99,19 +121,41 @@
           color: #333333;
           border: none;
           border-radius: 50px;
-          padding: 1vw 2vw;
+          padding: 0.3vw 1vw 0.5vw 2vw;
           cursor: pointer;
           position: absolute;
-          bottom: 2vw;
+          bottom: 1vw;
           right: 1vw;
           transition: all 0.3s ease-in-out;
+          font-weight: bold;
+          text-decoration: none;
 
           &:hover {
-            background-color: #bbd93a;
+            background-color: #dbf574;
           }
+          .icon-arrow{
+            display: inline-block;
+            background-color: #bad73a;
+            width: 30px;
+            height: 30px;
+            margin-left: 0.5vw;
+            margin-top: 1vw;
 
+
+
+            svg {
+              width: 15px;
+              height: 15px;
+              color: #000000;
+            }
+
+            &:hover {
+              background-color: #66a632;
+            }
+          }
         }
       }
+
     }
   }
 
@@ -161,6 +205,9 @@
           justify-content: flex-start;
           align-items: flex-start;
           z-index: 1;
+          &::before, &::after {
+            display: none;
+          }
 
           .number-title, .job-title, p {
             width: 100%;
