@@ -20,7 +20,7 @@ $transition-speed: 0.3s;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 5%;
+  padding: 20px 10%;
   background-color: $background-color;
   color: $text-color;
   z-index: 1;
@@ -28,7 +28,7 @@ $transition-speed: 0.3s;
 
   .logo-container {
     .logo {
-      max-width: 10vw;
+      max-width: 20vw;
       height: auto;
     }
   }
@@ -64,7 +64,7 @@ $transition-speed: 0.3s;
       color: $button-text-color;
       cursor: pointer;
       transition: background-color $transition-speed;
-      font-size: 1.1vw;
+      font-size: 0.8vw;
 
       &:hover {
         background-color: darken($button-color, 10%);

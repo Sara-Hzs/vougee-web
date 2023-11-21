@@ -27,7 +27,7 @@ export const Footer = () => {
                     <ul>
                         <li><FontAwesomeIcon icon={faPhone} /> +43 316 332211 0</li>
                         <li><FontAwesomeIcon icon={faEnvelope} /> office@vougee.gmbh</li>
-                        <li><FontAwesomeIcon icon={faMapMarkerAlt} /> Koeroesistrasse 21/5, 8010 Graz, Austria</li>
+                        <li><FontAwesomeIcon icon={faMapMarkerAlt} />  Koeroesistrasse 21/5, 8010 Graz, Austria</li>
                     </ul>
                 </div>
             </div>

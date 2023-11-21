@@ -35,7 +35,7 @@ function VouGeeWeb({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <link rel="shortcut icon" href={"./favicon.ico"} />
+                <link rel="shortcut icon" href={"assets/favicon.ico"} />
                 <title>VouGee</title>
             </Head>
             {isMobile ? <MobileHeader /> : <Header />}

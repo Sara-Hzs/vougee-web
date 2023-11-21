@@ -3,6 +3,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 10vw;
+  padding-top: 2vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   background-color: #f0f0f0;
   border-top-left-radius: 50px;
@@ -22,7 +23,7 @@
     justify-content: space-between;
     padding-top: 2vw;
     padding-bottom: 1vw;
-    padding-right: 12vw;
+    padding-right: 2vw;
 
     .footer-logo {
       display: flex;
@@ -30,8 +31,8 @@
       align-items: flex-start;
 
       img {
-        width: 160px;
-        height: 108px;
+        max-width: 40vw;
+        height: auto;
       }
     }
 
@@ -42,15 +43,20 @@
   }
 
   h2 {
-    font-size: 24px;
+    font-size: clamp(1rem, 4vw, 3rem);
     font-weight: bold;
     margin: 10px 0;
+    width: 100%;
+    color: #6f7072;
   }
 
   p {
     font-size: 16px;
     margin: 8px 0;
     padding-bottom: 1vw;
+    width: 100%;
+    color: #5b5c5d;
+
   }
 
   .oval-button {
@@ -71,32 +77,33 @@
   }
 
   .column-middle, .column-right {
-    padding-top: 8vw;
+    padding-top: 4vw;
     padding-bottom: 1vw;
   }
 
   .footer-contact, .footer-social {
     h3 {
-      font-size: 18px;
+      font-size: clamp(0.85rem, 3vw, 1.2rem);
       font-weight: bold;
       margin-bottom: 10px;
     }
 
     ul {
       list-style: none;
-      padding: 0;
+
 
       li {
-        font-size: 16px;
+        font-size: clamp(0.85rem, 3vw, 1.2rem);
         display: flex;
         align-items: center;
         margin-bottom: 5px;
 
 
+
         svg {
           width: 24px;
           height: 24px;
-          margin-right: 8px;
+          margin-right: 1vw;
           path {
             fill: #eeeeee;
             stroke: #000000;
@@ -140,7 +147,7 @@
     align-items: flex-start;
 
     .column-left, .column-middle, .column-right {
-      padding: 0;
+      padding: 1vw;
       margin-bottom: 20px;
     }
 
@@ -148,5 +155,6 @@
       justify-content: center;
       gap: 10px;
     }
+
   }
 }

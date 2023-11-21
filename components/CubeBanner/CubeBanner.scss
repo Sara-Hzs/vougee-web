@@ -130,10 +130,10 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
 }
   .Btn {
     position: absolute;
-    left: 11vw;
+    left: 2vw;
     border: 1px solid #758c0f;
     background-color: transparent;
-    padding: 5px 20px;
+    padding: 5px 18px;
     border-radius: 50px;
     cursor: pointer;
     font-size: $font-size-btn;
@@ -146,13 +146,13 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
 .infoSection h1 {
   font-size: clamp(2rem, 5vw, 6rem);
   margin-bottom: 1rem;
-  padding-left: 10vw;
+  padding-left: 2vw;
   padding-top: 4vw;
   color: $color-text;
 }
 .infoSection p {
   font-size: clamp(1rem, 1.5vw, 2rem);
-  padding-left: 10vw;
+  padding-left: 2vw;
   color: $color-text;
 }
 .imageSection img {

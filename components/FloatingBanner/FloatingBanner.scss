@@ -64,7 +64,9 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
     padding: 5px 20px;
     border-radius: 50px;
     cursor: pointer;
+    border: 1px solid #8c8989;
     margin-bottom: 1rem;
+    font-weight: bold;
   }
 
   .verticalLine {
