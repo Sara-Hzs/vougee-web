@@ -3,23 +3,24 @@
  * Represents the main header for the application.
  * - Features a centered logo, a navigation menu, and a Contact Us button.
  */
-
 // Base Variables
 $background-color: #f0f0f0;
 $text-color: #333333;
 $button-color: #bbd93a;
 $button-text-color: #4a4a4a;
 $transition-speed: 0.3s;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 150px;
+  padding: 16px 5%;
   background-color: $background-color;
   color: $text-color;
   z-index: 1;
@@ -27,14 +28,15 @@ $transition-speed: 0.3s;
 
   .logo-container {
     .logo {
-      max-width: 100px;
+      max-width: 10vw;
       height: auto;
     }
   }
+
   .nav-container {
     ul {
       display: flex;
-      gap: 40px;
+      gap: 2vw;
       list-style: none;
       padding: 0;
 
@@ -43,6 +45,7 @@ $transition-speed: 0.3s;
           text-decoration: none;
           color: inherit;
           transition: color $transition-speed;
+          font-size: 1vw;
 
           &:hover {
             color: darken($text-color, 10%);
@@ -51,15 +54,17 @@ $transition-speed: 0.3s;
       }
     }
   }
+
   .btn-container {
     .contact-btn {
-      padding: 10px 20px;
+      padding: 0.5vw 1vw;
       border: none;
       border-radius: 25px;
       background-color: $button-color;
       color: $button-text-color;
       cursor: pointer;
       transition: background-color $transition-speed;
+      font-size: 1.1vw;
 
       &:hover {
         background-color: darken($button-color, 10%);
@@ -67,5 +72,3 @@ $transition-speed: 0.3s;
     }
   }
 }
-
-
