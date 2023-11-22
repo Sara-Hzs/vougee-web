@@ -7,12 +7,13 @@
   background-color: #eeeeee;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
 
-  &.menu-open {
+  /*&.menu-open {
     background-color: #fff;
-  }
+  }*/
 
   .logo-container {
     flex-grow: 1;
+
     img.logo {
       width: auto;
       height: 30px;
@@ -37,7 +38,7 @@
     border-radius: 0 0 20px 20px;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.4s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
 
     &.open {
       max-height: 500px;

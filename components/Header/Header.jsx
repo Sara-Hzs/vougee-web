@@ -5,7 +5,13 @@ export const Header = () => {
     return (
         <header className="header">
             <div className="logo-container">
-                <img src='/assets/logo.png' alt="Company Logo" className="logo" />
+                <Link href="/">
+                    <a>
+                        <img src='/assets/logo.png' alt="Company Logo" className="logo" />
+                    </a>
+                </Link>
+
+
             </div>
             <nav className="nav-container">
                 <ul>

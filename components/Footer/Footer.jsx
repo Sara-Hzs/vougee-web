@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -14,10 +15,9 @@ export const Footer = () => {
                 <h2>We would love to hear from you!</h2>
                 <p>Are you ready for your blockchain project? Yes? Great!<br/>We start with you in your future.</p>
                 <button className="oval-button">Become a Client</button>
-                <div className="footer-rights">
-                    &copy; VouGee 2023. All rights reserved.
-                </div>
+
             </div>
+
 
             {/* Middle Column */}
             <div className="column-middle">
@@ -43,6 +43,10 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
+            <div className="footer-rights">
+                &copy; VouGee 2023. All rights reserved.
+            </div>
+
         </div>
     )
 }

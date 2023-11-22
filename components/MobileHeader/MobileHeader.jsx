@@ -19,9 +19,9 @@ export const MobileHeader = () => {
 
             <nav className={`mobile-nav-container ${isOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="#who-we-are-section">Who we are</a></li>
-                    <li><a href="#Technology-section">Technologies</a></li>
-                    <li><a href="#services-section">Services</a></li>
+                    <li><a href="/#who-we-are-section">Who we are</a></li>
+                    <li><a href="/#Technology-section">Technologies</a></li>
+                    <li><a href="/#services-section">Services</a></li>
                     <li><Link href="/jobs">Careers</Link></li>
                 </ul>
             </nav>
