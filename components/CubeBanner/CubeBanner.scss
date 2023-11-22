@@ -192,9 +192,9 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   .infoSection {
     position: relative;
     padding-bottom: 18vw;
-    text-align: left; // Align text to the left
+    text-align: left;
     h1, p {
-      padding-left: 1vw; // Remove the padding if it's not needed
+      padding-left: 1vw;
     }
 
   }

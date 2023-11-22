@@ -87,7 +87,7 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
 
 }
 
-// Additional media query for larger screens if needed
+
 @media (min-width: 769px) {
   .infoContainer {
     display: grid;

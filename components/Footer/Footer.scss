@@ -139,21 +139,21 @@
   @media (min-width: 769px) {
     .footer {
       flex-direction: row;
-      flex-wrap: wrap; /* Allow items to wrap onto the next line */
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
     }
 
     .column-left, .column-middle, .column-right {
-      flex-basis: calc(33.333% - 20px); /* Adjust the percentage and margin as needed */
-      margin-right: 20px; /* Add some space between the columns */
+      flex-basis: calc(33.333% - 20px);
+      margin-right: 20px;
     }
 
     .footer-rights {
-      flex-basis: 100%; /* Take full width to push it to the next line */
-      order: 4; /* Ensure it comes after the three columns */
-      margin-right: 0; /* Reset margin if any */
-      padding-top: 10px; /* Space from the columns above */
+      flex-basis: 100%;
+      order: 4;
+      margin-right: 0;
+      padding-top: 10px;
       padding-bottom: 2vw;
     }
   }
