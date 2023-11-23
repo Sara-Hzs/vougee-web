@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { jobs_example } from '../../utils/constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +6,31 @@ import Link from 'next/link';
 
 export const Jobs = () => {
     const [openFrame, setOpenFrame] = useState(null);
+    //  fetching logic
+    /*
+    const [jobs, setJobs] = useState({
+        loading: true,
+        error: false,
+        data: []
+    });
+
+    useEffect(() => {
+        fetch('backend_url')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                setJobs({ loading: false, error: false, data: data });
+            })
+            .catch(error => {
+                console.error('There was an error fetching the jobs:', error);
+                setJobs({ loading: false, error: true, data: [] });
+            });
+    }, []);
+    */
 
     const handleFrameClick = (frameNumber) => {
         setOpenFrame(frameNumber === openFrame ? null : frameNumber);
