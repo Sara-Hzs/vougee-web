@@ -33,7 +33,7 @@ export const EmpCount = () => {
                     </div>
                     <div className="statItem">
                         <span>60+</span>
-                        <span>people</span>
+                        <span>Gourmet</span>
                     </div>
                 </div>
             </div>

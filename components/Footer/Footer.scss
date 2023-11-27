@@ -8,10 +8,12 @@
   padding-top: 2vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   background-color: #f0f0f0;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  //border-top-left-radius: 50px;
+  //border-top-right-radius: 50px;
   position: relative;
   flex-wrap: wrap;
+  z-index: 1;
+
 
 
   .column-left, .column-middle, .column-right {

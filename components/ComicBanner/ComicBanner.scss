@@ -7,9 +7,6 @@
   padding-top: 10vw;
   padding-bottom: 5vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
-
-
-
   .textsWrapper {
     display: flex;
     flex-direction: row;
@@ -21,22 +18,17 @@
     font-size: clamp(1.8rem, 2vw, 3rem);
     font-weight: 600;
     width: 30%;
-
   }
   .textB {
     font-size: clamp(1.2rem, 1.5vw, 2rem);
     width: 100%;
-
   }
-
   .teamIllustration {
     width: 65%;
     max-width: 1700px;
     object-fit: cover;
     z-index: 2;
-
   }
-
   .curvy {
     position: absolute;
     left: 0;
@@ -45,7 +37,6 @@
   }
 }
 @media (max-width: 768px) {
-
   .ComicBanner {
     padding-top: 7rem;
     padding-bottom: 3vw;
@@ -56,12 +47,10 @@
     text-align: left;
     gap: 2em;
     padding-left: 2%;
-
   }
   .ComicBanner .teamIllustration {
     width: 90vw;
   }
-
   .ComicBanner .textA, .ComicBanner .textB {
     width: 90vw;
     max-width: 90vw;
