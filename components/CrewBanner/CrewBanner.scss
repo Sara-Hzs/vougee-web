@@ -32,7 +32,7 @@
 }
 .Grid {
   position: absolute;
-  top: 30%;
+  top:  clamp(25%, 18vw, 30%);
   left: 50%;
   width: 80%;
   height: 70%;

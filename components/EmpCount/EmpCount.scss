@@ -9,13 +9,13 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  top: 18%;
+  top: clamp(20%, 18vw, 25%);
   padding-top: 4vw;
 
 }
 .StatsContainer {
   position: absolute;
-  top: 30%;
+  top: clamp(30%, 25vw, 40%);
   left: 50%;
   transform: translate(-50%, -40%);
   width: 100%;
