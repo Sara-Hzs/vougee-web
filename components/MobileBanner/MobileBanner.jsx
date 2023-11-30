@@ -3,6 +3,8 @@ import React, { useState } from "react";
 export const MobileBanner = () => {
     const [activeSlide, setActiveSlide] = useState(1);
 
+
+
     const DefaultSlideContent = () => (
         <>
             <button className="ourServiceBtn">Our Services</button>
