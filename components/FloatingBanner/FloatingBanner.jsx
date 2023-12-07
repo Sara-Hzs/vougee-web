@@ -9,7 +9,7 @@ export const FloatingBanner = () => {
                 <div>
                     <button className="infoButton">WHO WE ARE</button>
                     <div className="verticalLine"></div>
-                    <h3>Austria’s Crypto & <br/>Blockchain Experts</h3>
+                    <h3>Austria’s Crypto & Blockchain Experts</h3>
                     <p>As one of the first Austrian companies, we have been dealing with cryptocurrencies since 2011.
                         Our intensive research and the  resulting gain in knowledge enable a serious and thus sustainable
                         view of future-oriented technologies, especially blockchain technology. We therefore see ourselves

@@ -20,19 +20,21 @@
     left: 5vw;
     top: 1vw;
     font-weight: bold;
+    font-size:clamp(0.8rem, 2vw, 1.2rem);
     background-color: transparent;
     color: #16171c;
-    padding: 6px 20px;
+    padding: 8px 20px;
     border-radius: 50px;
     cursor: pointer;
     border: 1px solid #8c8989;
+    letter-spacing: 2px;
   }
   h1, h3, p {
     align-self: flex-start;
     padding-left: 5vw;
   }
   h1 {
-    font-size: clamp(1.5rem, 6vw, 4rem);
+    font-size: clamp(1.8rem, 5vw, 6rem);
     width: 70%;
 
   }
@@ -46,7 +48,7 @@
     display: none;
   }
   p {
-    font-size: clamp(0.85rem, 3vw, 1.2rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
     padding-bottom: 4vw;
     padding-top: 2vw;
     width: 90%;

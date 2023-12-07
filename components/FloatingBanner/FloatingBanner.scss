@@ -61,12 +61,14 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
   .infoButton {
     background-color: transparent;
     color: $color-text-primary;
-    padding: 5px 20px;
+    padding: 8px 20px;
     border-radius: 50px;
     cursor: pointer;
     border: 1px solid #8c8989;
     margin-bottom: 1rem;
     font-weight: bold;
+    letter-spacing: 2px;
+    font-size:clamp(0.8rem, 2vw, 1.2rem);
   }
 
   .verticalLine {
@@ -80,7 +82,7 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
   }
 
   p {
-    font-size: clamp(1rem, 1.2vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
     padding-top: 2vw;
     text-align: left;
   }

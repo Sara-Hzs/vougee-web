@@ -7,7 +7,7 @@ export const CrewBanner = () => {
                 <div className="Grid"></div>
                 <div className="contentWrapper">
                     <div className="ovalBtn">Careers</div>
-                    <div className="joinText">Join the vougee crew</div>
+                    <div className="joinText">Join the <span style={{ color: '#b9da00' }}>vougee</span> crew</div>
                     <div className="descriptionText">
                         Join us in this exciting journey as we revolutionize the world of blockchain while savoring the flavor of camaraderie and grilled delights.
                     </div>

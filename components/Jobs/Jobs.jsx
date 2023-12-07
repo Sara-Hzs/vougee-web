@@ -5,7 +5,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 export const Jobs = () => {
-    const [openFrame, setOpenFrame] = useState(null);
+    const [openFrame, setOpenFrame] = useState(jobs_example.length - 1);
     //  fetching logic
     /*
     const [jobs, setJobs] = useState({
@@ -41,7 +41,7 @@ export const Jobs = () => {
     return (
         <div className="jobs">
             <div className="headlines">
-                <h1 className="headline-main">Open Positions</h1>
+                <h1 className="headline-main">OPEN POSITIONS</h1>
                 <h2 className="headline-sub">All positions are remote and full time</h2>
             </div>
             <div className="frames-container">
