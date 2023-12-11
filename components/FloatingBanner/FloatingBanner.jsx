@@ -10,11 +10,13 @@ export const FloatingBanner = () => {
                     <button className="infoButton">WHO WE ARE</button>
                     <div className="verticalLine"></div>
                     <h3>Austria’s Crypto & Blockchain Experts</h3>
-                    <p>As one of the first Austrian companies, we have been dealing with cryptocurrencies since 2011.
-                        Our intensive research and the  resulting gain in knowledge enable a serious and thus sustainable
-                        view of future-oriented technologies, especially blockchain technology. We therefore see ourselves
-                        as a competent partner when it comes to the questions of the future of your company. As a  full-service provider,
-                        we offer tailor-made SaaS, PaaS and individual solutions.</p>
+                    <p>At VouGee, we are pioneers in the world of cryptocurrencies and blockchain technology. Established in Austria in 2011, we have been at the forefront of this revolutionary industry from the very beginning. Our journey in the world of cryptocurrencies and blockchain has been marked by relentless research, continuous learning, and a steadfast commitment to understanding the nuances of this ever-evolving landscape.</p>
+                    <h3>Unlock the Future with Our Cutting-Edge Crypto Solutions</h3>
+                    <p>We are driven by innovation and fueled by a relentless commitment to research and development. Our unwavering focus on R&D empowers us to consistently deliver cutting-edge products to the market, ensuring that our clients remain at the forefront of the crypto application industry.</p>
+                    <h3>Leading the Way with Innovation</h3>
+                    <p>In a rapidly evolving crypto landscape, staying ahead of the curve is not just an advantage – it's a necessity. Our dedication to pushing the boundaries of technology allows us to develop solutions that are not just current but ahead of their time. Our customers get access to the latest advancements and innovations in the crypto world.</p>
+                    <h3>Empowering Crypto Application Providers</h3>
+                    <p>We understand that being a pioneer in the crypto application space is about more than just keeping up; it's about setting the pace. With our cutting-edge products and solutions, you can position yourself as a spearhead in the industry, offering your clients unparalleled technology and services.</p>
                 </div>
             </div>
             <svg className="curvyLine" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 75" preserveAspectRatio="none">

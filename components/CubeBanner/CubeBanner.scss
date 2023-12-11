@@ -144,14 +144,14 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
     }
   }
 .infoSection h1 {
-  font-size: clamp(1.8rem, 5vw, 6rem);
+  font-size:  clamp(1.8rem, 4vw, 3rem);
   margin-bottom: 2rem;
   padding-left: 9vw;
-  padding-top: 4vw;
+  padding-top: 6vw;
   color: $color-text;
 }
 .infoSection p {
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 1.6rem);
   padding-left: 9vw;
   color: $color-text;
 }
@@ -159,7 +159,7 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   width: 100%;
   max-width: 950px;
   margin-bottom: 1rem;
-  transform: translateY(-4vw);
+  transform: translateY(-3vw);
 
 }
 
@@ -181,7 +181,7 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   .infoSection {
     flex: 1;
     padding-right: 2rem;
-    padding-bottom: 5vw;
+    padding-bottom: 8vw;
   }
   .imageSection {
     flex: 1;
@@ -189,6 +189,7 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
     justify-content: center;
     align-items: center;
     color: #455725;
+
   }
 }
 
@@ -196,14 +197,14 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   .Btn {
     position: absolute;
     left: 1.3vw;
-    top: calc(10% - 5rem);
+    top: calc(10% - 6rem);
     z-index: 2;
 
   }
 
   .infoSection {
     position: relative;
-    padding-bottom: 18vw;
+    padding-bottom: 30vw;
     text-align: left;
     h1, p {
       padding-left: 1vw;
@@ -217,7 +218,6 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
 }
 
 @media (max-width: 425px){
-
 
   .imageSection {
     transform: translateY(-9vw);

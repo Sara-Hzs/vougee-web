@@ -25,8 +25,9 @@ export const CubeBanner = () => {
             </div>
             <div className="infoSection">
                 <button className="Btn">TECHNOLOGY</button>
-                <h1>Proficient with <br/> Blockchain Dev</h1>
-                <p>As one of the first Austrian companies, we have been dealing with cryptocurrencies since 2011. Our intensive research and the resulting gain in knowledge enable a serious and thus sustainable view of future-oriented technologies, especially blockchain technology. We therefore see ourselves as a competent partner when it comes to the questions of the future of your company. As a full-service provider, we offer tailor-made SaaS, PaaS and individual solutions.</p>
+                <h1>Proficient with Blockchain Dev - Mastering the Tools of the Trad</h1>
+                <p>Becoming proficient with blockchain development means mastering an ever-expanding toolkit of technologies. Whether it's creating smart contracts, building user interfaces, or connecting DApps to real-world data, the world of blockchain development is full of exciting challenges and opportunities.
+                    In the rapidly evolving world of blockchain technology, staying proficient with blockchain development is the key to unlocking a world of innovation and opportunity. For those in the know, blockchain offers far more than just cryptocurrencies; it's a transformative force reshaping industries, finance, supply chains, and more. To be at the forefront of this revolution, we daily must master an array of blockchain-relevant technologies.</p>
             </div>
             <div className="imageSection">
                 <img src="/assets/Technologies.png" alt="Technologies"/>

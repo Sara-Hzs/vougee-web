@@ -98,7 +98,7 @@ $text-align: left;
        &::before {
          content: '';
          position: absolute;
-         bottom: 6vw;
+         top: 85%;
          left: 62%;
          border-radius: 50%;
          transform: translateX(-50%);
@@ -114,7 +114,7 @@ $text-align: left;
          position: absolute;
          left: 62%;
          top: 80%;
-         height: 45%;
+         height: 55%;
          width: 1px;
          background-color: $text-color;
          z-index: 1;

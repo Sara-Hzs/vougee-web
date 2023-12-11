@@ -7,7 +7,7 @@ $color-curve: #363f24;
 
 // Typography Variables
 $font-primary: "MuseoSansRounded", "Inter", sans-serif;
-$font-size-title: clamp(1.8rem, 5vw, 6rem);
+$font-size-title: clamp(1.8rem, 4vw, 3rem);
 $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
 
 
@@ -41,7 +41,7 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
   width: 85%;
   margin: 0 auto;
   border-radius: 20px;
-  transform: translateY(-5%);
+  transform: translateY(-1%);
 
   > img {
     width: clamp(90%, 25vw + 15%, 80%);
@@ -79,11 +79,13 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
     text-align: left;
     font-size: $font-size-title;
     margin-bottom: 1rem;
+
   }
 
   p {
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    padding-top: 2vw;
+    font-size: clamp(1rem, 1vw, 1.6rem);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     text-align: left;
   }
 
