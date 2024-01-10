@@ -2,7 +2,7 @@ import React from "react";
 
 export const HeroBanner = () => {
     return (
-        <div className="HeroBanner banner">
+        <div className="HeroBanner banner" id="hero-banner">
             {/* For screens 769px and above */}
             <div className="layout-large">
                 <div className="left">
@@ -12,7 +12,11 @@ export const HeroBanner = () => {
                         Blockchain system solutions for<br/>
                         sustainable business and<br/>
                         ecosystem development<br/>
-                        <button className="info-btn">Find out more</button>
+                        <button className="info-btn" onClick={() => {
+                            document.getElementById('services-section').scrollIntoView({behavior: 'smooth'});
+                        }}>
+                            Find out more
+                        </button>
                     </div>
                 </div>
 
@@ -61,7 +65,11 @@ export const HeroBanner = () => {
                     Blockchain system solutions for<br/>
                     sustainable business and<br/>
                     ecosystem development<br/>
-                    <button className="info-btn">Find out more</button>
+                    <button className="info-btn" onClick={() => {
+                        document.getElementById('services-section').scrollIntoView({behavior: 'smooth'});
+                    }}>
+                        Find out more
+                    </button>
                 </div>
             </div>
         </div>

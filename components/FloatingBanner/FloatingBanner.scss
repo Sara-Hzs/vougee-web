@@ -7,7 +7,7 @@ $color-curve: #363f24;
 
 // Typography Variables
 $font-primary: "MuseoSansRounded", "Inter", sans-serif;
-$font-size-title: clamp(1.8rem, 4vw, 2.5rem);
+$font-size-title: clamp(1rem, 2vw, 1.9rem);
 $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
 
 
@@ -44,7 +44,7 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
   transform: translateY(-1%);
 
   > img {
-    width: clamp(90%, 25vw + 15%, 80%);
+    width: clamp(90%, 25vw + 10%, 50%);
     height: auto;
     margin-bottom: 1rem;
   }
@@ -78,12 +78,12 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
   h3 {
     text-align: left;
     font-size: $font-size-title;
-    margin-bottom: 1rem;
+
 
   }
 
   p {
-    font-size: clamp(1rem, 1vw, 1.6rem);
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
     padding-top: 1vw;
     padding-bottom: 1vw;
     text-align: left;
@@ -92,7 +92,7 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 900px) {
   .infoContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -123,4 +123,5 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
 
 
   }
+
 }

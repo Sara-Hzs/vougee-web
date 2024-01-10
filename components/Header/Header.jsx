@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Header = () => {
     return (
-        <header className="header">
+        <header className="header" >
             <div className="logo-container">
                 <Link href="/">
                     <a>
@@ -22,7 +22,11 @@ export const Header = () => {
                 </ul>
             </nav>
             <div className="btn-container">
-                <button className="contact-btn">Contact Us</button>
+                <button className="contact-btn" onClick={() => {
+                    document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'});
+                }}>
+                    Contact Us
+                </button>
             </div>
         </header>
     )

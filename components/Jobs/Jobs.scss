@@ -18,7 +18,7 @@
     padding-bottom: 2vw;
 
     .headline-main {
-      font-size: clamp(2rem, 6vw, 6rem);
+      font-size: clamp(2rem, 5vw, 5rem);
       color: #fff;
       margin-bottom: 10px;
       text-align: center;
@@ -31,7 +31,18 @@
       text-align: center;
     }
   }
+  .benefits-text ul, .opening{
+    text-align: left;
+    list-style: inside;
+    padding: 0;
+    margin: auto;
+    max-width: 100%;
+    color: #fdfdfd;
+  }
 
+  .benefits-text li, .opening {
+    margin-bottom: 1rem;
+  }
   .frames-container {
     display: flex;
     flex-direction: row-reverse;
@@ -41,11 +52,9 @@
     padding-right: 4vw;
 
 
-
-
     .frame {
       width: 6vw;
-      height: 32vw;
+      height: 22vw;
       background-color: #fdfdfd;
       cursor: pointer;
       transition: width 0.5s ease-in-out, height 0.5s ease-out;
@@ -78,7 +87,7 @@
       &.open {
         position: relative;
         width: 50vw;
-        height: 32vw;
+        height: 22vw;
 
 
         &::before {
