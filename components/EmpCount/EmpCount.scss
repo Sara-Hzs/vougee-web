@@ -143,7 +143,7 @@
   }
   .curved {
     height: 45%;
-    top: 20%;
+    top: 27%;
   }
   .StatsContainer {
     top: 28%;
@@ -171,18 +171,17 @@
 }
 
 
-@media (max-width: 680px){
-  .designContainer{
-display: none;
-}
-  .statsHeader svg{
+@media (max-width: 680px) {
+  .designContainer {
     display: none;
   }
-  .statsHeader {
-   height: 45px;
-
-    span{
-      padding-left: 1vw;
-    }
+  .statsHeader svg {
+    display: none;
   }
+  .StatsContainer {
+    display: none;
+  }
+
 }
+
+

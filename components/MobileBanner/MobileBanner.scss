@@ -29,26 +29,23 @@
     border: 1px solid #8c8989;
     letter-spacing: 2px;
   }
+  #top{
+    padding-top: 3em;
+  }
   h2, h1 , h4, p {
     align-self: flex-start;
     padding-left: 5vw;
   }
   h2 , h1{
-
     width: 70%;
 
   }
-  h4 {
-    margin-bottom: 8vw;
-    margin-top: 12vw;
-    padding-top: 5vw;
-    font-size: clamp(1rem, 3vw, 1.5rem);
-  }
-  .titel{
-    margin-bottom: 6vw;
+  h4{
+
     margin-top: 1vw;
-    padding-top: 1vw;
+
     font-size: clamp(1rem, 3vw, 1.5rem);
+    width: 60%;
   }
   .divider{
     display: none;
@@ -62,7 +59,7 @@
   .imageSection {
     width: 100%;
     padding-left: 9vw;
-    padding-top: 8vw;
+    margin-top: 6rem;
     img {
       width: 90%;
     }
@@ -104,13 +101,13 @@
     .imageSection {
       position: absolute;
       right: 6vw;
-      top: 7vw;
+
       max-width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        max-width: 900px;
+        max-width: 850px;
       }
     }
     .divider {
@@ -119,29 +116,26 @@
       margin-left: 12vw;
       background-color: #c1c1c2;
       width: 2px;
-      height: 40px;
+      height: 80px;
 
     }
 
-    h4 {
-      margin-bottom: 2vw;
-      margin-top: 2vw;
-      width: 50%;
-
-
+    h4{
+    padding-bottom: 0.5vw;
+      width: 40%;
     }
     h2{
       margin-top: 1vw;
-      margin-bottom: 1vw;
+
       width: 30%;
 
     }
     h1{
-      margin-top: 1vw;
-      margin-bottom: 1vw;
-      width: 55%;
+padding-top: 10px;
+      width: 15%;
     }
     p {
+
       width: 55%;
     }
 
@@ -152,6 +146,7 @@
     .ourServiceBtn{
       align-self: flex-start;
       margin-left: 7vw;
+
 
     }
     .rightSection {

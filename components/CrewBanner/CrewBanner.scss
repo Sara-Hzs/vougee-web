@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 30vh;
+  min-height: 32vh;
   overflow: hidden;
   padding: 0 0 2vw 0;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
@@ -51,19 +51,19 @@
   font-size:clamp(0.8rem, 2vw, 1.2rem);
   font-weight: bold;
   cursor: default;
-  margin-bottom: 1vw;
+  margin-bottom: 0.8vw;
 }
 
 .descriptionText {
-  font-size: clamp(1.1rem, 1.2vw, 1.9rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.9rem);
   width: 50%;
   color: #6c6d70;
 }
 .joinText {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: clamp(2.2rem, 4vw, 6rem);
+  font-size: clamp(1.5rem, 3vw, 6rem);
   color: #6c6d70;
 }
 @media (max-width: 768px){
@@ -71,7 +71,7 @@
     padding-bottom: 50vw;
   }
   .descriptionText {
-    width: 95%;
+    width: 100%;
   }
   .Grid{
     display: none;

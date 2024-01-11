@@ -15,9 +15,9 @@ export const FloatingBanner = () => {
                     <p>We are driven by innovation and fueled by a relentless commitment to research and development. Our unwavering focus on R&D empowers us to consistently deliver cutting-edge products to the market, ensuring that our clients remain at the forefront of the crypto application industry.</p>
                     <h3>Leading the Way with Innovation</h3>
                     <p>In a rapidly evolving crypto landscape, staying ahead of the curve is not just an advantage – it's a necessity. Our dedication to pushing the boundaries of technology allows us to develop solutions that are not just current but ahead of their time. Our customers get access to the latest advancements and innovations in the crypto world.</p>
-                    <h3>Empowering Crypto Application Providers</h3>
+                    {/* <h3>Empowering Crypto Application Providers</h3>
                     <p>We understand that being a pioneer in the crypto application space is about more than just keeping up; it's about setting the pace. With our cutting-edge products and solutions, you can position yourself as a spearhead in the industry, offering your clients unparalleled technology and services.</p>
-                </div>
+               */} </div>
             </div>
             <svg className="curvyLine" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 75" preserveAspectRatio="none">
                 <path d="M0,2 L2,2 C10,3 8,10 23,11 L110,11 L177,11 C192,10 190,3 198,2 L200,2 V100 H0 Z" fill="#363f24" />

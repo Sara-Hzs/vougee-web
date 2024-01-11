@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   width: 100%;
-  min-height: 50vh;
+  min-height: 110vh;
   padding: 2vw 4vw 45vw 5vw;
   background: linear-gradient(#363f24, #475d17);
   z-index: 2;
@@ -38,11 +38,23 @@
     margin: auto;
     max-width: 100%;
     color: #fdfdfd;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
   }
 
   .benefits-text li, .opening {
     margin-bottom: 1rem;
   }
+
+
+  .opening{
+    font-weight: bold;
+  }
+  .benefits-text ul{
+    line-height: 25px;
+  }
+
+
   .frames-container {
     display: flex;
     flex-direction: row-reverse;
@@ -52,15 +64,18 @@
     padding-right: 4vw;
 
 
+
     .frame {
-      width: 6vw;
-      height: 22vw;
+      width: 5vw;
+      height: 60vh;
       background-color: #fdfdfd;
       cursor: pointer;
       transition: width 0.5s ease-in-out, height 0.5s ease-out;
       margin-left: 10px;
       border-radius: 12px;
       position: relative;
+      padding: 2vw;
+      box-sizing: border-box;
 
       .vertical-text {
         writing-mode: vertical-rl;
@@ -86,34 +101,38 @@
 
       &.open {
         position: relative;
-        width: 50vw;
-        height: 22vw;
+        width: 60vw;
 
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 20px;
-          left: 50px;
-          right: 40px;
-          height: 2px;
-          background-color: #b3b3b3;
+        //{ &::before {
+        // content: "";
+        //  position: absolute;
+        // top: 90px;
+        //left: 140px;
+        //right: 40px;
+        //height: 2px;
+        // background-color: #b3b3b3;
+        // }
+
+        // &::after {
+        //  content: "";
+        // position: absolute;
+        //  bottom: 40px;
+        // left: 40px;
+        // right: clamp(200px, 12vw, 260px);
+        // height: 2px;
+        //   background-color:#b3b3b3;
+        // }
+        .frame-section-title {
+          font-size: clamp(1rem, 1.4vw, 1.4rem);
+          color: #333;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
         }
-
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: 40px;
-          left: 40px;
-          right: clamp(200px, 12vw, 250px);
-          height: 2px;
-          background-color:#b3b3b3;
-        }
-
 
         .number-title, .job-title, p {
           text-align: left;
-          margin: 10px;
+          font-size: clamp(1rem, 1.5vw, 1.5rem);
         }
 
         .number-title {
@@ -126,8 +145,10 @@
           font-size: clamp(18px, 3.5vw, 20px);
         }
 
-        p {
-          line-height: clamp(25px, 4vw, 30px);
+        h1, h2, h3, p, ul {
+          margin: 1vw 0;
+          font-size: clamp(0.9rem, 1.2vw, 1.3rem);
+          padding-left: 2vw;
         }
 
         .apply-btn {
@@ -143,6 +164,7 @@
           transition: all 0.3s ease-in-out;
           font-weight: bold;
           text-decoration: none;
+          font-size: clamp(0.8rem, 1.1vw, 1.1rem);
 
           &:hover {
             background-color: #dbf574;
@@ -178,6 +200,9 @@
     align-items: center;
     padding: 6vw 0;
     min-height: auto;
+    .benefits-text{
+      padding: 6%;
+    }
 
     .frames-container {
       flex-direction: column;
@@ -185,28 +210,33 @@
 
       .frame {
         width: 90%;
-        height: 50px;
-        margin: 2vw 0;
-        order: 5;
-        &:nth-child(1) { order: 5; }
-        &:nth-child(2) { order: 4; }
+        height: 90px; /* Adjust height if necessary */
+        margin: 1vw 0; /* Adjust spacing between frames */
+        /* ... other styles ... */
+
+        &:nth-child(1) { order: 1; }
+        &:nth-child(2) { order: 2; }
         &:nth-child(3) { order: 3; }
-        &:nth-child(4) { order: 2; }
-        &:nth-child(5) { order: 1; }
-        .frame-number, .number-title, .job-title, p, .apply-btn {
-          transform-origin: center;
-        }
+        &:nth-child(4) { order: 4; }
+        &:nth-child(5) { order: 5; }
+        &:nth-child(6) { order: 6; }
+        &:nth-child(7) { order: 7; }
+        &:nth-child(8) { order: 8; }
+        &:nth-child(9) { order: 9; }
+        &:nth-child(10) { order: 10; }
 
         .vertical-text {
           writing-mode: horizontal-tb;
           left: 50%;
-          top: 30%;
+          top: 25%;
           transform: translateX(-50%);
           bottom: initial;
+          max-width: 10em;
+          white-space: normal;
         }
 
         .frame-number {
-          top: 14px;
+          top: 25px;
           left: 12px;
           transform: none;
         }
@@ -214,7 +244,7 @@
         &.open {
           display: flex;
           width: 85vw;
-          height: 90vw;
+          height: 110vh;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
@@ -228,7 +258,10 @@
             text-align: left;
             transform: none;
           }
+          h1, h2, h3, p, ul {
 
+            padding-left: 7vw;
+          }
           .apply-btn {
             padding: 1vw 1vw 1vw 3vw;
             text-align: center;
@@ -239,4 +272,5 @@
       }
     }
   }
+
 }

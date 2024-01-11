@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding-bottom: 5vw;
+  padding-bottom: 9vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   z-index: 1;
 
@@ -40,8 +40,8 @@
   }
   .textB {
     font-size: clamp(1rem, 1.5vw, 2rem);
-
   }
+
   .teamIllustration {
     width: 65%;
     max-width: 1700px;
@@ -58,7 +58,7 @@
 @media (max-width: 768px) {
   .ComicBanner {
     padding-top: 3rem;
-    padding-bottom: 3vw;
+    padding-bottom: 25vw;
 
     .workBtn {
       align-self: flex-start;
@@ -79,6 +79,7 @@
   .ComicBanner .textA, .ComicBanner .textB {
     width: 90vw;
     max-width: 90vw;
+
   }
   .ComicBanner .textA{
     padding-top: 5vw;

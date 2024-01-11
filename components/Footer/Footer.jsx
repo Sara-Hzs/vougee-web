@@ -27,7 +27,7 @@ export const Footer = () => {
                     <ul>
                         <li><FontAwesomeIcon icon={faPhone}/> +43 316 332211 0</li>
                         <li><FontAwesomeIcon icon={faEnvelope}/> office@vougee.gmbh</li>
-                        <li><FontAwesomeIcon icon={faMapMarkerAlt}/> Koeroesistrasse 21/5, 8010 Graz, Austria</li>
+                        <li><FontAwesomeIcon icon={faMapMarkerAlt}/>  Körösistrasse  21/5, 8010 Graz, Austria</li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +49,9 @@ export const Footer = () => {
                     <a className="footer-link">Home</a>
                 </Link>
                 <a href="#agb" className="footer-link">AGB(DE)</a>
-                <a href="#privacy-policy" className="footer-link">Privacy Policy</a>
+                <Link href="/privacy-policy">
+                    <a className="footer-link">Privacy Policy</a>
+                </Link>
             </div>
 
 

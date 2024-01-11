@@ -64,7 +64,7 @@ export const Jobs = () => {
                         <li>No all-in contracts, attractive salary and bonus opportunity.</li>
                     </ul>
                 </div>
-                {/* Rest of your component */}
+
             </div>
             <div className="frames-container">
                 {jobs_example.map((job, index) => (
@@ -78,25 +78,38 @@ export const Jobs = () => {
                                 <h1 className="number-title">{formatNumber(jobs_example.length - index)}</h1>
                                 <h2 className="job-title">{job.name}</h2>
                                 <p>{job.description}</p>
-                                <ul>
-                                    {job.requirements.map((requirement, index) => (
-                                        <li key={index}>{requirement}</li>
-                                    ))}
-                                </ul>
-                                {job.scope && (
-                                    <ul>
-                                        {job.scope.map((item, index) => (
-                                            <li key={index}>{item}</li>
-                                        ))}
-                                    </ul>
+
+
+                                {/* Requirements */}
+                                {job.requirements && job.requirements.length > 0 && (
+                                    <>
+                                        <h3 className="frame-section-title">Requirements</h3>
+                                        <ul>
+                                            {job.requirements.map((requirement, rIndex) => (
+                                                <li key={rIndex}>{requirement}</li>
+                                            ))}
+                                        </ul>
+                                    </>
                                 )}
-                                <Link href="/#otherpage">
-                                    <a className="apply-btn">
+
+                                {/* Scope of Work */}
+                                {job.scope && job.scope.length > 0 && (
+                                    <>
+                                        <h3 className="frame-section-title">Scope Of Work</h3>
+                                        <ul>
+                                            {job.scope.map((scopeItem, sIndex) => (
+                                                <li key={sIndex}>{scopeItem}</li>
+                                            ))}
+                                        </ul>
+                                    </>
+                                )}
+
+                                    <a href="mailto:office@vougee.gmbh"  className="apply-btn">
                                         Apply Position
                                         <div className="icon-arrow"><FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                                         </div>
                                     </a>
-                                </Link>
+
                             </>
                         ) : (
                             <>
