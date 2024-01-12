@@ -27,20 +27,21 @@ export const MobileBanner = () => {
 
     const Slide2Content = () => (
         <>
-            <button className="ourServiceBtn">Our Services</button>
-             <h4 id="top">Building Your Online Presence</h4>
-            <div className="divider"></div>
+            {/*<button className="ourServiceBtn">Our Services</button>*/}
             <div className="imageSection">
                 <img src="/assets/WebDevelopment.png" alt="WebDevelopment"/>
             </div>
-            <h4>Web and Backend Development
-                in the Blockchain and Cryptocurrency World</h4>
-            <p>In the dynamic realm of blockchain and cryptocurrency, we are a beacon of innovation, specializing in sophisticated web
-                and backend development. We are dedicated to building robust solutions that empower our clients to thrive in this
+            <h4>Trailblazing the Blockchain Ecosystems</h4>
+            <h1>Web and Backend Development</h1>
+            <p>In the dynamic realm of blockchain and cryptocurrency, we are a beacon of innovation, specializing in
+                sophisticated web
+                and backend development. We are dedicated to building robust solutions that empower our clients to
+                thrive in this
                 cutting-edge industry.
-                Dedicated to web and backend development in the blockchain and cryptocurrency sectors, we deliver cutting-edge,
-                secure and user-friendly solutions. Tools, functions and services such as Blockchain Explorers, Price Services, Crypto
-                Exchanges, Smart Contracts, Minting Services, Coin Listings or robust blockchain solutions, ensuring high performance
+                Tools, functions and services such as Blockchain Explorers, Price
+                Services, Crypto
+                Exchanges, Smart Contracts, Minting Services, Coin Listings or robust blockchain solutions, ensuring
+                high performance
                 and scalability are our daily business</p>
         </>
     );
@@ -73,29 +74,51 @@ export const MobileBanner = () => {
 
 
     return (
-        <div className="MobileBanner" id="services-section">
-            {activeSlide === 1 && <DefaultSlideContent />}
-            {activeSlide === 2 && <Slide2Content />}
-            {/* {activeSlide === 3 && <Slide3Content />}
+        <>
+            <div className="MobileBanner" id="services-section">
+                <DefaultSlideContent/>
+                {/* {activeSlide === 3 && <Slide3Content />}
             {activeSlide === 4 && <Slide4Content />}
             {activeSlide === 5 && <Slide5Content />}
             {activeSlide === 6 && <Slide6Content />}*/}
 
-            <div className="rightSection">
-                <div className="circle topCircle"></div>
-                <div className="topLine"></div>
-                <div className="numbers">
-                    <span onClick={() => setActiveSlide(1)}>01.</span>
-                    <span onClick={() => setActiveSlide(2)}>02.</span>
-                    {/* <span onClick={() => setActiveSlide(3)}>03.</span>
+                <div className="rightSection">
+                    <div className="circle topCircle"></div>
+                    <div className="topLine"></div>
+                    <div className="numbers">
+                        <span>01.</span>
+                        {/* <span onClick={() => setActiveSlide(3)}>03.</span>
                     <span onClick={() => setActiveSlide(4)}>04.</span>
                     <span onClick={() => setActiveSlide(5)}>05.</span>
                     <span onClick={() => setActiveSlide(6)}>06.</span>*/}
 
+                    </div>
+                    <div className="bottomLine"></div>
+                    <div className="circle bottomCircle"></div>
                 </div>
-                <div className="bottomLine"></div>
-                <div className="circle bottomCircle"></div>
             </div>
-        </div>
+            <div className="MobileBanner no-margin" id="services-section">
+                <Slide2Content/>
+                {/* {activeSlide === 3 && <Slide3Content />}
+            {activeSlide === 4 && <Slide4Content />}
+            {activeSlide === 5 && <Slide5Content />}
+            {activeSlide === 6 && <Slide6Content />}*/}
+
+                <div className="rightSection">
+                    <div className="circle topCircle"></div>
+                    <div className="topLine"></div>
+                    <div className="numbers">
+                        <span>02.</span>
+                        {/* <span onClick={() => setActiveSlide(3)}>03.</span>
+                    <span onClick={() => setActiveSlide(4)}>04.</span>
+                    <span onClick={() => setActiveSlide(5)}>05.</span>
+                    <span onClick={() => setActiveSlide(6)}>06.</span>*/}
+
+                    </div>
+                    <div className="bottomLine"></div>
+                    <div className="circle bottomCircle"></div>
+                </div>
+            </div>
+        </>
     )
 }

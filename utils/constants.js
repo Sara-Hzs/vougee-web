@@ -45,9 +45,7 @@ export const jobs_example = [
             'Develop and integrate web apps with microservices, specifying REST APIs',
             'Collaborate with Product, Design, QA, and DevOps teams',
             'Participate in team sessions, workshops, and stay technologically updated',
-            'Adhere to best practices in software development',
             'Address business goals, manage production issues and technical debt',
-            'Focus on impactful development tasks and process refinement'
         ]
     },
     {

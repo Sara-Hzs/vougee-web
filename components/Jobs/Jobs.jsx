@@ -33,7 +33,7 @@ export const Jobs = () => {
     */
 
     const handleFrameClick = (frameNumber) => {
-        setOpenFrame(frameNumber === openFrame ? null : frameNumber);
+        setOpenFrame(frameNumber === openFrame ? openFrame : frameNumber);
     };
 
     const formatNumber = (number) => String(number).padStart(2, '0');

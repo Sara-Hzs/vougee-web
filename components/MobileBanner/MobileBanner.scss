@@ -6,6 +6,9 @@
  */
 
 .MobileBanner {
+  &.no-margin {
+    margin-top: 0;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,20 +97,21 @@
 
   @media (min-width: 769px) {
     margin-top: 140px;
-    padding-bottom: 12vw;
+    padding-bottom: 4vw;
     padding-top: 4vw;
 
-
+    #top{
+      padding-top: 1em;
+    }
     .imageSection {
       position: absolute;
       right: 6vw;
-
       max-width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        max-width: 850px;
+        max-width: 800px;
       }
     }
     .divider {
@@ -152,7 +156,7 @@ padding-top: 10px;
     .rightSection {
       position: absolute;
       right: 5vw;
-      top: 12vw;
+      top: 6vw;
       flex-direction: column;
 
       .circle {

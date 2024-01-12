@@ -26,8 +26,22 @@ export const CubeBanner = () => {
             <div className="infoSection">
                 <button className="Btn">TECHNOLOGY</button>
                 <h1>Proficient with Blockchain Dev - Mastering the Tools of the Trad</h1>
-                <p>Becoming proficient with blockchain development means mastering an ever-expanding toolkit of technologies. Whether it's creating smart contracts, building user interfaces, or connecting DApps to real-world data, the world of blockchain development is full of exciting challenges and opportunities.
-                    In the rapidly evolving world of blockchain technology, staying proficient with blockchain development is the key to unlocking a world of innovation and opportunity. For those in the know, blockchain offers far more than just cryptocurrencies; it's a transformative force reshaping industries, finance, supply chains, and more. To be at the forefront of this revolution, we daily must master an array of blockchain-relevant technologies.</p>
+                <p>Becoming proficient with blockchain development means mastering an ever-expanding toolkit of
+                    technologies. Whether it's creating smart contracts, building user interfaces, or connecting DApps
+                    to real-world data, the world of blockchain development is full of exciting challenges and
+                    opportunities.
+                    In the rapidly evolving world of blockchain technology, staying proficient with blockchain
+                    development is the key to unlocking a world of innovation and opportunity. For those in the know,
+                    blockchain offers far more than just cryptocurrencies; it's a transformative force reshaping
+                    industries, finance, supply chains, and more. To be at the forefront of this revolution, we daily
+                    must
+                    master an array of blockchain-relevant technologies.</p> <br/>
+                <h2>Strong Focus on R&D - Forging the Spearhead of Blockchain Innovation</h2><br/>
+                <p>At the heart of our blockchain development prowess lies a deep-rooted commitment to Research and
+                    Development (R&D). This focus is pivotal in navigating the complex and rapidly evolving blockchain
+                    landscape. Our R&D efforts are geared towards exploring the cutting edge of blockchain technology,
+                    where we delve into the latest advancements and seek innovative solutions to current and emerging
+                    challenges.</p>
             </div>
             <div className="imageSection">
                 <img src="/assets/Technologies.png" alt="Technologies"/>

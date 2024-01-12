@@ -10,14 +10,18 @@ export const MobileHeader = () => {
 
     return (
         <header className={`mobile-header ${isOpen ? 'menu-open' : ''}`}>
-            <div className="logo-container">
-                <img src='/assets/logo.png' alt="Company Logo" className="logo" />
-            </div>
+            <Link href="/">
+                <div className="logo-container">
+                    <img src='/assets/logo.png' alt="Company Logo" className="logo"/>
+                </div>
+            </Link>
             <button className="hamburger" onClick={toggleMenu}>
                 {isOpen ? '×' : '☰'}
             </button>
 
-            <nav className={`mobile-nav-container ${isOpen ? 'open' : ''}`}>
+            <nav className={`mobile-nav-container ${isOpen ? 'open' : ''}`} onClick={() => {
+                setIsOpen(false)
+            }}>
                 <ul>
                     <li><a href="/#who-we-are-section">Who we are</a></li>
                     <li><a href="/#Technology-section">Technologies</a></li>
