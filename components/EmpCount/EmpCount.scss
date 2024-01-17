@@ -10,12 +10,12 @@
   left: 0;
   z-index: 1;
   width: 100%;
-  top: clamp(14%, 16vw, 28%);
+  top: clamp(14%, 16vw, 20%);
   padding-top: 4vw;
 }
 .StatsContainer {
   position: absolute;
-  top: clamp(24%, 26vw, 43%);
+  top: clamp(25%, 26vw, 30%);
   left: 50%;
   transform: translate(-50%, -40%);
   width: 92%;
@@ -62,7 +62,7 @@
   transform: translateX(-50%);
 }
 .statItem span:first-child {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
 
 }

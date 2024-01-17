@@ -48,8 +48,12 @@ export const Footer = () => {
                 <Link href="/#hero-banner">
                     <a className="footer-link">Home</a>
                 </Link>
-                <a href="/privacypolicy" className="footer-link">AGB(DE)</a>
-                <a href="/privacypolicy" className="footer-link">Privacy Policy</a>
+                <Link href="/privacypolicy">
+                    <a className="footer-link">AGB(DE)</a>
+                </Link>
+                <Link href="/privacypolicy">
+                    <a className="footer-link">Privacy Policy</a>
+                </Link>
             </div>
 
 

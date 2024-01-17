@@ -1,0 +1,89 @@
+.ComicBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 9vw;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+  z-index: 1;
+}
+.ComicBanner .workBtn {
+  align-self: flex-start;
+  margin: 0 0 1vw 20vw;
+  background-color: transparent;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1px solid #8c8989;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: clamp(0.7rem, 1.9vw, 1.1rem);
+}
+.ComicBanner .textsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 60%;
+  gap: clamp(1.5rem, 2vw, 2rem);
+}
+.ComicBanner .textA {
+  font-size: clamp(1.8rem, 2vw, 3rem);
+  font-weight: 600;
+}
+.ComicBanner .textB {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+.ComicBanner .teamIllustration {
+  width: 65%;
+  max-width: 1700px;
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+}
+.ComicBanner .curvy {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ComicBanner {
+    margin-top: 2rem;
+  }
+  .ComicBanner .workBtn {
+    align-self: flex-start;
+    margin-left: 6vw;
+  }
+  .ComicBanner .textsWrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 2em;
+    padding-left: 2%;
+  }
+  .ComicBanner .teamIllustration {
+    width: 90vw;
+  }
+  .ComicBanner .textA, .ComicBanner .textB {
+    width: 90vw;
+    max-width: 90vw;
+  }
+  .ComicBanner .textA {
+    padding-top: 5vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1370px) {
+  .ComicBanner {
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .ComicBanner {
+    margin-top: 5rem;
+  }
+}
+
+/*# sourceMappingURL=ComicBanner.css.map */

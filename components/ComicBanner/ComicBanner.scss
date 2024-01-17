@@ -9,9 +9,12 @@
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   z-index: 1;
 
+
+
+
   .workBtn{
     align-self: flex-start;
-    margin: 2vw 0 1vw 20vw;
+    margin: 0 0 1vw 20vw;
     background-color: transparent;
     color: black;
     padding: 8px 20px;
@@ -56,9 +59,7 @@
 }
 @media (max-width: 768px) {
   .ComicBanner {
-    padding-top: 3rem;
-    padding-bottom: 25vw;
-
+    margin-top: 2rem;
     .workBtn {
       align-self: flex-start;
       margin-left: 6vw;
@@ -84,8 +85,14 @@
     padding-top: 5vw;
   }
 }
-@media (min-width: 1441px) {
+@media screen and (min-width: 769px) and (max-width: 1370px) {
   .ComicBanner {
-    padding-top: calc(3rem + (199 - 3) * ((100vw - 1441px) / (2560 - 1441)));
+    margin-top: 0.5rem;
   }
 }
+@media screen and (min-width: 1540px) {
+  .ComicBanner {
+    margin-top: 5rem;
+  }
+}
+

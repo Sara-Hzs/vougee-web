@@ -5,7 +5,7 @@
   position: relative;
   min-height: 32vh;
   overflow: hidden;
-  padding: 0 0 2vw 0;
+  padding: 0;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
 
 }
@@ -27,13 +27,13 @@
   text-align: center;
   z-index: 2;
   width: 80%;
-  padding-bottom: 18vw;
+  margin-bottom: 20rem;
 }
 .Grid {
   position: absolute;
-  top:  clamp(25%, 18vw, 30%);
+  top:  clamp(20%, 10vw, 30%);
   left: 50%;
-  width: 80%;
+  width: 50%;
   height: 70%;
   background:
           radial-gradient(circle at center, transparent 20%, transparent 20%, #f0f0f0 30%, #f0f0f0 100%),
@@ -55,7 +55,7 @@
 }
 
 .descriptionText {
-  font-size: clamp(0.9rem, 1.2vw, 1.9rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.6rem);
   width: 50%;
   color: #6c6d70;
 }
@@ -63,14 +63,11 @@
   padding-bottom: 0.5em;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: clamp(1.5rem, 3vw, 6rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   color: #6c6d70;
 }
 @media (max-width: 768px){
-  .contentWrapper {
-    padding-bottom: 50vw;
-    min-height: 300px;
-  }
+
   .descriptionText {
     width: 100%;
   }
@@ -79,14 +76,11 @@
   }
   .ovalBtn {
     margin-bottom: 6vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
   }
 }
-@media (min-width: 1441px){
-  .descriptionText{
-    padding-bottom: 20vw;
-
+@media (max-width: 679px){
+  .contentWrapper {
+    margin-bottom: 5rem;
   }
-
 }
-
