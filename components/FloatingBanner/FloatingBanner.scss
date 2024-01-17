@@ -47,6 +47,8 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
     width: clamp(90%, 25vw + 10%, 50%);
     height: auto;
     margin-bottom: 1rem;
+    pointer-events: none;
+    user-select: none;
   }
 
   > div {

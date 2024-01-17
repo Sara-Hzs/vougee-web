@@ -94,6 +94,8 @@ $text-align: left;
       transform: translateY(-6vh);
       position: relative;
       height: 100%;
+      pointer-events: none;
+      user-select: none;
 
        &::before {
          content: '';
@@ -132,6 +134,8 @@ $text-align: left;
       height: auto;
       padding-left: 25vw;
       padding-bottom: 9vw;
+      pointer-events: none;
+      user-select: none;
     }
 
     .d-text .upper-words {
@@ -193,6 +197,8 @@ $text-align: left;
       flex: 1;
       width: 40vw;
       max-width: 250px;
+      pointer-events: none;
+      user-select: none;
 
       img {
         width: 100%;
@@ -221,6 +227,8 @@ $text-align: left;
     padding: 0;
     flex: 0 1 auto;
     z-index: 1;
+    pointer-events: none;
+    user-select: none;
 
 
 

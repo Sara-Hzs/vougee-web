@@ -8,8 +8,8 @@ export const HeroBanner = () => {
                 <div className="left">
                     <div className="a-text">UNLOCK <br/>THE <br/>FUTURE</div>
                     <div className="b-text">
-                        VouGee is the expert on<br/>
-                        Blockchain system solutions for<br/>
+                        VouGee is the expert in<br/>
+                        Blockchain system solutions, for<br/>
                         sustainable business and<br/>
                         ecosystem development<br/>
                         <button className="info-btn" onClick={() => {

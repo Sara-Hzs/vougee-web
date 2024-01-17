@@ -163,6 +163,8 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   max-width: 950px;
   margin-bottom: 1rem;
   transform: translateY(-3vw);
+  pointer-events: none;
+  user-select: none;
 
 }
 
