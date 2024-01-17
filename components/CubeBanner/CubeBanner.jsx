@@ -25,7 +25,7 @@ export const CubeBanner = () => {
             </div>
             <div className="infoSection">
                 <button className="Btn">TECHNOLOGY</button>
-                <h1>Proficient with Blockchain Dev - Mastering the Tools of the Trad</h1>
+                <h1>Proficient with Blockchain Dev - Mastering the Tools of the Trade</h1>
                 <p>Becoming proficient with blockchain development means mastering an ever-expanding toolkit of
                     technologies. Whether it's creating smart contracts, building user interfaces, or connecting DApps
                     to real-world data, the world of blockchain development is full of exciting challenges and

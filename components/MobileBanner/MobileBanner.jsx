@@ -42,7 +42,7 @@ export const MobileBanner = () => {
                 Services, Crypto
                 Exchanges, Smart Contracts, Minting Services, Coin Listings or robust blockchain solutions, ensuring
                 high performance
-                and scalability are our daily business</p>
+                and scalability, are our daily business</p>
         </>
     );
     {/* const Slide3Content = () => <DefaultSlideContent />;

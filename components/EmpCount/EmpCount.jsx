@@ -29,7 +29,7 @@ export const EmpCount = () => {
                     </div>
                     <div className="statItem">
                         <span>30</span>
-                        <span>Programming</span>
+                        <span>Languages</span>
                     </div>
                     <div className="statItem">
                         <span>60+</span>

@@ -135,13 +135,9 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
     background-color: transparent;
     padding: 8px 20px;
     border-radius: 50px;
-    cursor: pointer;
     font-size: $font-size-btn;
     color: #cde543;
-    &:hover {
-      background-color: #475321;
-      color: $color-text;
-    }
+
   }
 .infoSection h1 {
   font-size: clamp(1.3rem, 3vw, 1.9rem);
