@@ -44,7 +44,7 @@ export const Footer = () => {
                 </div>
             </div>*/}
             <div className="footer-rights">
-                &copy; VouGee 2023. All rights reserved.
+                &copy; VouGee 2024. All rights reserved.
                 <Link href="/#hero-banner">
                     <a className="footer-link">Home</a>
                 </Link>

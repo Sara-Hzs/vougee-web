@@ -7,6 +7,7 @@
   padding-bottom: 9vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   z-index: 1;
+  margin-top: 1rem;
 }
 .ComicBanner .workBtn {
   align-self: flex-start;
