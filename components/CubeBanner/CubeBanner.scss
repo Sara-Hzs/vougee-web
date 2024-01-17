@@ -127,6 +127,7 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   left: 0;
   z-index: 1;
   width: 100%;
+
 }
   .Btn {
     position: absolute;
@@ -234,7 +235,7 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   .imageSection {
     transform: translateY(-9vw);
   }
-  .curvy {
-    height: 0; //TODO
-  }
+.curvy{
+  height: 0;
+}
 }
