@@ -7,7 +7,7 @@
   padding-bottom: 9vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   z-index: 1;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .ComicBanner .workBtn {
   align-self: flex-start;
@@ -78,12 +78,17 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1370px) {
   .ComicBanner {
-    margin-top: 0.5rem;
+    margin-top: 5rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .ComicBanner {
-    margin-top: 5rem;
+    margin-top: 7rem;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .ComicBanner {
+    margin-top: 10rem;
   }
 }
 

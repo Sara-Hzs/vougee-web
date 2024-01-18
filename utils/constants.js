@@ -19,9 +19,9 @@ export const jobs_example = [
             'Responsibility for the technical management of blockchain products',
             'Development of layer 0, 1 or 2 blockchain fullnodes',
             'Working closely with related teams to develop decentralized products and services',
-            'Developments of various APIs related to blockchain technologies',
-            'Aligning with Information Security team to prevent attacks',
-            'Regular deployments and documentation of your work'
+             'Developments of various APIs related to blockchain technologies',
+             'Aligning with Information Security team to prevent attacks',
+             'Regular deployments and documentation of your work'
         ]
     },
     {
@@ -34,7 +34,7 @@ export const jobs_example = [
             'Proficiency in JavaScript, React, NodeJS, Express, GraphQL, SQL',
             'Experience in full-stack development and scalable applications',
             'Skilled in automated testing, algorithm design, and complexity analysis',
-            'Fast learner with a structured approach to problem-solving',
+           'Fast learner with a structured approach to problem-solving',
             'Team-oriented with a positive attitude in a collaborative environment',
             'Agile development experience and good communication skills',
             'Knowledge of German or English, Linux system experience is a plus'
@@ -43,7 +43,7 @@ export const jobs_example = [
             'Utilize full stack development skills in blockchain application development',
             'Active participation in a team-focused on innovation and continuous improvement',
             'Develop and integrate web apps with microservices, specifying REST APIs',
-            'Collaborate with Product, Design, QA, and DevOps teams',
+             'Collaborate with Product, Design, QA, and DevOps teams',
             'Participate in team sessions, workshops, and stay technologically updated',
             'Address business goals, manage production issues and technical debt',
         ]
@@ -143,8 +143,8 @@ export const jobs_example = [
             'Collaborate with cross-platform teams to integrate software and hardware components for seamless operation',
             'Ensure that all integrated components work in harmony and communicate effectively with each other',
             'Troubleshoot and resolve any integration-related issues that arise',
-            'Develop and maintain the necessary scripts and tools for system integration',
-            'Design and implement necessary software tools to support system integration',
+             'Develop and maintain the necessary scripts and tools for system integration',
+             'Design and implement necessary software tools to support system integration',
             'Work closely with project managers, software developers, and hardware engineers to deliver high-quality integrated systems'
         ]
     }
@@ -168,7 +168,7 @@ export const jobs_example = [
             'Development of cross platform mobile applications',
             'Working closely with related teams to develop decentralized products and services',
             '  Developments of various APIs related to blockchain technologies',
-            'Aligning with Information Security team to prevent attacks',
+             'Aligning with Information Security team to prevent attacks',
             'Regular deployments and documentation of your work'
         ]
     },
@@ -211,9 +211,10 @@ export const jobs_example = [
             'Designing, developing, and maintaining embedded firmware for cutting-edge products.',
             'Developing firmware for an ARM Cortex STM32 Microcontroller to communicate with mobile applications (iOS/Android).',
             'Ensuring seamless communication and integration between Firmware/Microcontroller and Mobile App, leveraging your low-level mobile app development experience (iOS/Android).',
-            'Ensuring security aspects are covered at all levels.',
-            'Taking on the role of product responsibility, regularly improving the product, and deploying updates accordingly.',
-            'Handling documentation and release management.'
+             'Ensuring security aspects are covered at all levels.',
+             'Taking on the role of product responsibility, regularly improving the product, and deploying updates accordingly.',
+             'Handling documentation and release management.'
+
         ]
     }
 ]
