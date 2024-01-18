@@ -68,8 +68,8 @@
 
     .frame {
       width: 5vw;
-      max-height: 90vh;
-      min-height: 90vh;
+      max-height: 55vh;
+      min-height: 55vh;
       background-color: #fdfdfd;
       cursor: pointer;
       transition: width 0.5s ease-in-out, height 0.5s ease-out;
@@ -293,8 +293,8 @@
         &.open {
           display: flex;
           width: 100%;
-          min-height: unset;
-          max-height: 120vh;
+          min-height: 60vh;
+          max-height: 60vh;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;

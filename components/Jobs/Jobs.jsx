@@ -108,6 +108,7 @@ export const Jobs = () => {
                                     <br/>
 
                                 </div>
+
                                 <a href="mailto:jobs@vougee.gmbh" className="apply-btn">
                                     Apply Position
                                     <div className="icon-arrow"><FontAwesomeIcon icon={faArrowUpRightFromSquare}/>

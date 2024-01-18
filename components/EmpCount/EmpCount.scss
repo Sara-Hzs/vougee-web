@@ -187,3 +187,18 @@
 }
 
 
+@media screen and (min-width: 3000px) {
+  .curved {
+    top: clamp(14%, 16vw, 20%);
+  }
+
+  .StatsContainer {
+
+    top: clamp(25%, 26vw, 35%);
+
+
+  }
+}
+
+
+
