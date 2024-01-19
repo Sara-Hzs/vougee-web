@@ -5,6 +5,9 @@ import { faFacebookF, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-s
 import Link from 'next/link';
 
 export const Footer = () => {
+
+
+
     return (
         <div className="footer">
             {/* Left Column */}
