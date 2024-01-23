@@ -228,7 +228,6 @@
           }
 
           .icon-arrow {
-            background-color: #bad73a;
             width: 30px;
             height: 30px;
             display: flex;
@@ -242,7 +241,9 @@
             }
 
             &:hover {
-              background-color: #66a632;
+              opacity: 1;
+              background-color: darken(#bad73a, 10%);
+
             }
           }
         }
