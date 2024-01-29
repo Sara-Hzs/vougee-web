@@ -175,7 +175,7 @@
         }
 
 
-        .number-title, .job-title, p {
+         p {
           text-align: left;
           font-size: clamp(1rem, 1.5vw, 1.2rem);
         }
@@ -183,11 +183,12 @@
         .number-title {
           font-size: clamp(20px, 4vw, 24px);
           margin-top: 4rem;
+          text-align: left;
         }
 
-
         .job-title {
-          font-size: clamp(18px, 3.5vw, 20px);
+          font-size: clamp(18px, 3.2vw, 23px);
+          text-align: left;
         }
 
         h1, h2, h3, p, ul {
@@ -195,6 +196,8 @@
           font-size: clamp(0.9rem, 1.2vw, 1.2rem);
           padding-left: 2vw;
         }
+
+
 
         .apply-btn {
           min-width: 100px;

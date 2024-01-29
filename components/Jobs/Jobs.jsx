@@ -77,7 +77,7 @@ export const Jobs = () => {
                             <>
                                 <div className='frame-content'>
                                     <h1 className="number-title">{formatNumber(jobs_example.length - index)}</h1>
-                                    <h2 className="job-title">{job.name}</h2>
+                                    <h1 className="job-title">{job.name}</h1>
                                     <p>{job.description}</p>
 
 
