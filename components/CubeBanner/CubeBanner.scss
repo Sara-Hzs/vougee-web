@@ -29,13 +29,14 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   flex-direction: column-reverse;
   align-items: center;
   padding: 1rem;
-  background: linear-gradient($color-gradient-start, $color-gradient-end);
+  background:  $color-gradient-start;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   .Btn,
   .infoSection,
   .imageSection,
   .curvy {
     z-index: 1;
+
   }
 }
 .verticalBar {
