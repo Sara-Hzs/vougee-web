@@ -66,9 +66,15 @@ $text-align: left;
       background-color: $button-color;
       color: $button-text-color;
       cursor: pointer;
-      transition: background-color $transition-speed;
       box-shadow: 0 4px 20px #e0e9b7;
       font-family: "MuseoSansRounded", "Inter", sans-serif;
+      transition: opacity 0.9s, background-color 0.3s;
+
+      &:hover {
+        opacity: 1;
+        background-color: darken(#bad73a, 10%);
+
+      }
     }
   }
 
