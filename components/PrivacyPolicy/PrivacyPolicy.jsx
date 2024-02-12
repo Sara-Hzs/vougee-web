@@ -1,10 +1,11 @@
 import React from 'react';
 
 
+
 const PrivacyPolicy = () => {
     return (
-        <div className="privacyPolicy" >
-            <h1>Privacy Policy</h1>
+        <div className="privacyPolicy">
+            <h1 id="privacy-policy">Privacy Policy</h1>
 
             <section>
                 <h2>1. Introduction</h2>

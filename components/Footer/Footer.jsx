@@ -51,10 +51,10 @@ export const Footer = () => {
                 <Link href="/#hero-banner">
                     <a className="footer-link">Home</a>
                 </Link>
-                <Link href="/privacypolicy">
+                <Link href="/privacypolicy#privacy-policy">
                     <a className="footer-link">AGB(DE)</a>
                 </Link>
-                <Link href="/privacypolicy">
+                <Link href="/privacypolicy#privacy-policy">
                     <a className="footer-link">Privacy Policy</a>
                 </Link>
             </div>
