@@ -156,20 +156,6 @@
 
 }
 
-@media (min-width: 1024px) {
-
-  .designContainer {
-    width: calc(100% + 1vw);
-  }
-  .rectangle {
-    height: 8px;
-
-  }
-  .statItem::before {
-    bottom: 15%;
-  }
-}
-
 
 @media (max-width: 680px) {
   .designContainer {

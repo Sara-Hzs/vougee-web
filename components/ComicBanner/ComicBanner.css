@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
   padding-bottom: 9vw;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   z-index: 1;
-  margin-top: 2rem;
+  background-color: #fdfdfd;
 }
 .ComicBanner .workBtn {
   align-self: flex-start;
@@ -52,7 +52,8 @@
 
 @media (max-width: 768px) {
   .ComicBanner {
-    margin-top: 2rem;
+    padding-top: clamp(0.1rem, 7vw, 20rem);
+    padding-bottom: 15vw;
   }
   .ComicBanner .workBtn {
     align-self: flex-start;
@@ -76,19 +77,9 @@
     padding-top: 5vw;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1370px) {
+@media (min-width: 1320px) {
   .ComicBanner {
-    margin-top: 5rem;
-  }
-}
-@media screen and (min-width: 1540px) {
-  .ComicBanner {
-    margin-top: 8rem;
-  }
-}
-@media screen and (min-width: 3000px) {
-  .ComicBanner {
-    margin-top: 10rem;
+    padding-top: clamp(0.1rem, 6vw, 20rem);
   }
 }
 
