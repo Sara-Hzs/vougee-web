@@ -45,7 +45,7 @@ $transition-speed: 0.3s;
           text-decoration: none;
           color: inherit;
           transition: color $transition-speed;
-          font-size: 1vw;
+          font-size: clamp(1rem, 1.3vw, 1.8rem);
 
           &:hover {
             color: darken($text-color, 10%);
