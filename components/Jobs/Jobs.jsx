@@ -1,39 +1,42 @@
 import React, { useState, useEffect } from 'react';
+import { jobs_example } from '../../utils/constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 export const Jobs = () => {
-    const [jobs, setJobs] = useState([]);
-    const [openFrame, setOpenFrame] = useState(jobs.length - 1);
+    const [openFrame, setOpenFrame] = useState(jobs_example.length - 1);
+    //  fetching logic
+    /*
+    const [jobs, setJobs] = useState({
+        loading: true,
+        error: false,
+        data: []
+    });
 
     useEffect(() => {
-        const fetchJobs = async () => {
-            try {
-                const response = await fetch('http://localhost:1337/jobs');
+        fetch('backend_url')
+            .then(response => {
                 if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                    throw new Error('Network response was not ok');
                 }
-                const data = await response.json();
-                setJobs(data);
-                setOpenFrame(data.length - 1);
-            } catch (error) {
-                console.error("There was a problem fetching job data:", error);
-            }
-        };
-
-        fetchJobs();
+                return response.json();
+            })
+            .then(data => {
+                setJobs({ loading: false, error: false, data: data });
+            })
+            .catch(error => {
+                console.error('There was an error fetching the jobs:', error);
+                setJobs({ loading: false, error: true, data: [] });
+            });
     }, []);
+    */
 
     const handleFrameClick = (frameNumber) => {
-        setOpenFrame(frameNumber === openFrame ? -1 : frameNumber);
+        setOpenFrame(frameNumber === openFrame ? openFrame : frameNumber);
     };
 
     const formatNumber = (number) => String(number).padStart(2, '0');
-
-    // Helper function to split semicolon-separated strings into arrays
-    const splitStringBySemicolon = (str) => {
-        return str?.split(';').map(s => s.trim()).filter(Boolean) || [];
-    };
 
     return (
         <div className="jobs">
@@ -61,55 +64,66 @@ export const Jobs = () => {
                         <li>No all-in contracts, attractive salary and bonus opportunity.</li>
                     </ul>
                 </div>
+
             </div>
             <div className="frames-container">
-                {jobs.length > 0 ? jobs.map((job, index) => (
+                {jobs_example.map((job, index) => (
                     <div
                         key={job.id}
                         className={`frame ${openFrame === index ? 'open' : ''}`}
                         onClick={() => handleFrameClick(index)}
                     >
                         {openFrame === index ? (
-                            <div className='frame-content'>
-                                <a href={`mailto:jobs@vougee.gmbh?subject=Application for ${job.name}`}
-                                   className="apply-btn">
+                            <>
+                                <div className='frame-content'>
+                                    <h1 className="number-title">{formatNumber(jobs_example.length - index)}</h1>
+                                    <h1 className="job-title">{job.name}</h1>
+                                    <p>{job.description}</p>
+
+
+                                    {/* Requirements */}
+                                    {job.requirements && job.requirements.length > 0 && (
+                                        <>
+                                            <h3 className="frame-section-title">Requirements</h3>
+                                            <ul>
+                                                {job.requirements.map((requirement, rIndex) => (
+                                                    <li key={rIndex}>{requirement}</li>
+                                                ))}
+                                            </ul>
+                                        </>
+                                    )}
+
+                                    {/* Scope of Work */}
+                                    {job.scope && job.scope.length > 0 && (
+                                        <>
+                                            <h3 className="frame-section-title">Scope Of Work</h3>
+                                            <ul>
+                                                {job.scope.map((scopeItem, sIndex) => (
+                                                    <li key={sIndex}>{scopeItem}</li>
+                                                ))}
+                                            </ul>
+                                        </>
+                                    )}
+                                    <br/>
+                                    <br/>
+
+                                </div>
+
+                                <a href="mailto:jobs@vougee.gmbh" className="apply-btn">
                                     Apply Position
-                                    <div className="icon-arrow">
-                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
+                                    <div className="icon-arrow"><FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                                     </div>
                                 </a>
-                                <h1 className="number-title">{formatNumber(jobs.length - index)}</h1>
-                                <h1 className="job-title">{job.name}</h1>
-                                <p>{job.description}</p>
+                            </>
 
-                                {/* Requirements */}
-                                <h3 className="frame-section-title">Requirements</h3>
-                                <ul>
-                                    {splitStringBySemicolon(job.requirements).map((requirement, rIndex) => (
-                                        <li key={rIndex}>{requirement}</li>
-                                    ))}
-                                </ul>
-
-                                {/* Scope of Work */}
-                                <h3 className="frame-section-title">Scope Of Work</h3>
-                                <ul>
-                                    {splitStringBySemicolon(job.scope).map((scopeItem, sIndex) => (
-                                        <li key={sIndex}>{scopeItem}</li>
-                                    ))}
-                                </ul>
-
-
-                            </div>
                         ) : (
                             <>
                                 <span className="vertical-text">{job.name}</span>
-                                <div className="frame-number">{formatNumber(jobs.length - index)}</div>
+                                <div className="frame-number">{formatNumber(jobs_example.length - index)}</div>
                             </>
                         )}
                     </div>
-                )) : (
-                    <p>Loading jobs...</p>
-                )}
+                ))}
             </div>
         </div>
     );
