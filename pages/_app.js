@@ -17,6 +17,7 @@ import '../components/MobileBanner/MobileBanner.scss'
 import '../components/MobileHeader/MobileHeader.scss'
 import '../components/EmpCount/EmpCount.scss'
 import '../components/PrivacyPolicy/PrivacyPolicy.scss';
+import '../components/Impressum/Impressum.scss';
 
 function VouGeeWeb({ Component, pageProps }) {
     const [isMobile, setIsMobile] = useState(false);

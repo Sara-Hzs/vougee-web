@@ -57,6 +57,9 @@ export const Footer = () => {
                 <Link href="/privacypolicy#privacy-policy">
                     <a className="footer-link">Privacy Policy</a>
                 </Link>
+                <Link href="/impressum#impressum">
+                    <a className="footer-link">Impressum</a>
+                </Link>
             </div>
 
 
