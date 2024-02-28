@@ -51,14 +51,12 @@ export const Footer = () => {
                 <Link href="/#hero-banner">
                     <a className="footer-link">Home</a>
                 </Link>
-                <Link href="/privacypolicy#privacy-policy">
-                    <a className="footer-link">AGB(DE)</a>
-                </Link>
+                <a href="/VouGee_AGB.pdf" target="_blank" className="footer-link">AGB(DE)</a>
                 <Link href="/privacypolicy#privacy-policy">
                     <a className="footer-link">Privacy Policy</a>
                 </Link>
                 <Link href="/impressum#impressum">
-                    <a className="footer-link">Impressum</a>
+                    <a className="footer-link">Imprint</a>
                 </Link>
             </div>
 

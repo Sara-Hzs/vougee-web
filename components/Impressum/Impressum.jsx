@@ -5,7 +5,7 @@ import React from 'react';
 const Impressum  = () => {
     return (
         <div className="impressum ">
-            <h1 id="impressum">Impressum</h1>
+            <h1 id="impressum">Imprint</h1>
             <section>
                 <h2>Responsible for the content and website information:</h2>
                 <p>VouGee GmbH<br/>
@@ -14,7 +14,7 @@ const Impressum  = () => {
                     Austria</p>
 
                 <h2>Contact</h2>
-                <p>
+                <p className="links">
                     <a href="mailto:office@vougee.com">office@vougee.com</a> bzw. <a
                     href="mailto:office@vougee.gmbh">office@vougee.gmbh</a><br/>
                     <a href="https://www.vougee.com">www.vougee.com</a> or <a
@@ -32,7 +32,7 @@ const Impressum  = () => {
             <section>
 
                 <h2>Disclaimer of liability</h2>
-                <h3>1. Content of this website:</h3>
+                <h3>1. Content of this website</h3>
                 <p>The individual pages of this website have been carefully edited and checked. However, the provider
                     does not accept any liability for the topicality, correctness, completeness or quality of the
                     information provided. Liability claims against the provider relating to material or immaterial
