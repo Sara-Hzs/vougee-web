@@ -101,6 +101,9 @@ export const Jobs = () => {
                                         <li key={sIndex}>{scopeItem}</li>
                                     ))}
                                 </ul>
+                                <a>
+                                    <br/>
+                                </a>
 
 
                             </div>
