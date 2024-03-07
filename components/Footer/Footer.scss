@@ -30,8 +30,10 @@
     padding-bottom: 1vw;
     padding-right: 2vw;
     .footer-logo img {
-      max-width: 100%;
+      width: 10vw;
       height: auto;
+      max-width: 190px;
+      min-width: 90px;
     }
     a{
       text-decoration: none;

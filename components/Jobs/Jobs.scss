@@ -275,8 +275,8 @@
       .frame {
         width: 100%;
         transition: max-height 0.5s ease-in-out;
-        min-height: 90px;
-        max-height: 90px;
+        min-height: 70px;
+        max-height: 70px;
         &:nth-child(1) { order: 10; }
         &:nth-child(2) { order: 9; }
         &:nth-child(3) { order: 8; }
