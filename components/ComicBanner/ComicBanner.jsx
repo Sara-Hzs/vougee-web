@@ -3,6 +3,7 @@ import React from "react";
 export const ComicBanner = () => {
     return (
         <div className="ComicBanner">
+
             <button className="workBtn">WORKING AT VOUGEE</button>
             <div className="textsWrapper">
 
