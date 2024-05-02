@@ -10,6 +10,7 @@
   z-index: 2;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
 
+
   .headlines {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,8 @@
     width: 100%;
     padding-bottom: 2vw;
     margin: 1rem 0;
+    pointer-events: none;
+    user-select: none;
 
     .headline-main {
       font-size: clamp(2rem, 5vw, 5rem);
@@ -66,6 +69,7 @@
 
 
 
+
     .frame {
       width: 5vw;
       max-height: 55vh;
@@ -88,9 +92,12 @@
 
 
 
+
         h1, h2, h3 {
           color: #343333;
           text-shadow: 2px 2px 4px rgba(23, 23, 23, 0.5);
+          pointer-events: none;
+          user-select: none;
         }
 
         p, ul {
@@ -98,6 +105,8 @@
           background-color: rgba(107, 105, 105, 0.1);
           padding: 1rem;
           border-radius: 20px;
+          pointer-events: none;
+          user-select: none;
 
         }
 

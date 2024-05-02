@@ -26,6 +26,8 @@ $font-size-text-responsive: clamp(0.8rem, 2vw, 1.8rem);
   flex-wrap: wrap;
   position: relative;
   font-family: $font-primary;
+  pointer-events: none;
+  user-select: none;
 }
 
 

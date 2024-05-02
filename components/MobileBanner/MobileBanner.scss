@@ -17,6 +17,8 @@
   z-index: 2;
   background-color: #fdfdfd;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
+  pointer-events: none;
+  user-select: none;
 
   .ourServiceBtn {
     position: absolute;

@@ -31,6 +31,8 @@ $font-size-heading: clamp(0.8rem, 2.5vw, 1.5rem);
   padding: 1rem;
   background:  $color-gradient-start;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
+  pointer-events: none;
+  user-select: none;
   .Btn,
   .infoSection,
   .imageSection,

@@ -27,6 +27,7 @@ $text-align: left;
     font-family: "MuseoSansRounded", "Inter", sans-serif;
 
 
+
     .left, .right {
        display: flex;
       flex-direction: column;
@@ -45,9 +46,12 @@ $text-align: left;
       text-align: $text-align;
       color: $text-color;
       z-index: 1;
+      pointer-events: none;
+      user-select: none;
     }
     .b-text {
       position: relative;
+
       &::before {
         content: '';
         position: absolute;

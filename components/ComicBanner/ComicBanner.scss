@@ -9,6 +9,8 @@
   padding-top: 60px;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
   z-index: 1;
+  pointer-events: none;
+  user-select: none;
 
   background-color: #fdfdfd;
   .workBtn{

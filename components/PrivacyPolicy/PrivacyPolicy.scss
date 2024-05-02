@@ -5,6 +5,8 @@
   background: #fff;
   color: #333;
   font-family: "MuseoSansRounded", "Inter", sans-serif;
+  pointer-events: none;
+  user-select: none;
 
   h1 {
     text-align: center;
