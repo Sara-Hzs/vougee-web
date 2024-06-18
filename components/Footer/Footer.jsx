@@ -22,7 +22,7 @@ export const Footer = () => {
             </div>
 
 
-            {/* Middle Column */}
+            {/* Middle Column
             <div className="column-middle">
 
                 <div className="footer-contact" id="contact-section">
@@ -34,7 +34,7 @@ export const Footer = () => {
                     </ul>
                 </div>
             </div>
-
+            */}
             {/* Right Column
             <div className="column-right">
                 <div className="footer-social">

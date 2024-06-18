@@ -118,6 +118,12 @@ export const Jobs = () => {
                     <p>Loading jobs...</p>
                 )}
             </div>
+
+            <h2 className="email">
+                <a href="mailto:jobs@vougee.gmbh" className="custom-email-link">jobs@vougee.gmbh</a>
+            </h2>
+
+
         </div>
     );
 };

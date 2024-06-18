@@ -1,4 +1,6 @@
 import React from 'react';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPhone} from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -19,11 +21,11 @@ const Impressum  = () => {
                     href="mailto:office@vougee.gmbh">office@vougee.gmbh</a><br/>
                     <a href="https://www.vougee.com">www.vougee.com</a> or <a
                     href="https://www.vougee.gmbh">www.vougee.gmbh</a>
+                    <p> +43 316 332211 0</p>
                 </p>
 
 
-
-            <h2>Chamber of Commerce Austria (WKO) - Company Register</h2>
+                <h2>Chamber of Commerce Austria (WKO) - Company Register</h2>
             <p>CEO: Roman Philipp<br/>
                 Commercial registration number: FN 425169 z<br/>
                 Commercial Register Court: Landesgericht für ZRS Graz<br/>
