@@ -4,7 +4,7 @@ import {ComicBanner} from "../components/ComicBanner/ComicBanner";
 import {Jobs} from "../components/Jobs/Jobs";
 import {EmpCount} from "../components/EmpCount/EmpCount";
 
-function index() {
+function JobsPage() {
     return (
         <>
             <CrewBanner/>
@@ -16,4 +16,6 @@ function index() {
     )
 }
 
-export default index;
+export default JobsPage;
+
+
