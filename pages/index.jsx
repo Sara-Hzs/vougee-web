@@ -4,8 +4,7 @@ import {FloatingBanner} from "../components/FloatingBanner/FloatingBanner";
 import {CubeBanner} from "../components/CubeBanner/CubeBanner";
 import {MobileBanner} from "../components/MobileBanner/MobileBanner";
 
-
-function index() {
+function HomePage() {
     return (
         <>
             <HeroBanner/>
@@ -19,4 +18,4 @@ function index() {
 
 }
 
-export default index;
+export default HomePage;

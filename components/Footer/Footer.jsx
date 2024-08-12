@@ -11,7 +11,7 @@ export const Footer = () => {
     return (
         <div className="footer">
             {/* Left Column */}
-            <div className="column-left">
+            <div className="column-left" id="contact-section">
                 <div className="footer-logo">
                     <img src="/assets/logo.png" alt="VouGee Logo"/>
                 </div>
