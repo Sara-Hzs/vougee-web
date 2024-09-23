@@ -84,7 +84,13 @@ export const Jobs = () => {
                                 </a>
                                 <h1 className="number-title">{formatNumber(jobs.length - index)}</h1>
                                 <h1 className="job-title">{job.attributes.Name}</h1>
-                                <p>{job.attributes.Description}</p>
+                                {/* Description */}
+                                <h3 className="frame-section-title">Description</h3>
+                                <ul>
+                                    {splitStringBySemicolon(job.attributes.Description).map((description, dIndex) => (
+                                        <li key={dIndex}>{description}</li>
+                                    ))}
+                                </ul>
 
                                 {/* Requirements */}
                                 <h3 className="frame-section-title">Requirements</h3>
