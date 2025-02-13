@@ -1,0 +1,75 @@
+.impressum {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+.impressum .links a {
+  color: #000000;
+  text-decoration: none;
+}
+.impressum h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #475d17;
+}
+.impressum h2 {
+  font-size: 1.5rem;
+  color: #363f24;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+.impressum p, .impressum li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.impressum ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.impressum section {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.impressum section:first-of-type {
+  border-top: 5px solid #b8d900;
+}
+
+@media (max-width: 768px) {
+  .privacyPolicy h1 {
+    font-size: 1.75rem;
+  }
+  .privacyPolicy h2 {
+    font-size: 1.25rem;
+  }
+  .privacyPolicy p, .privacyPolicy li {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 680px) {
+  .privacyPolicy {
+    padding: 10px;
+  }
+  .privacyPolicy h1 {
+    font-size: 1.5rem;
+  }
+  .privacyPolicy h2 {
+    font-size: 1.125rem;
+  }
+  .privacyPolicy p, .privacyPolicy li {
+    font-size: 0.75rem;
+  }
+  .privacyPolicy section {
+    padding: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=Impressum.css.map */

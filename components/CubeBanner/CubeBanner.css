@@ -1,0 +1,233 @@
+/*
+   CubeBanner Styling:
+   SVG positioning at the bottom, text
+   and image formatting in the info section,
+   and responsive design .
+*/
+.CubeBanner {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 1rem;
+  background: #363f24;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+.CubeBanner .Btn,
+.CubeBanner .infoSection,
+.CubeBanner .imageSection,
+.CubeBanner .curvy {
+  z-index: 1;
+}
+
+.verticalBar {
+  position: absolute;
+  left: 2%;
+  top: calc(4vw + 2%);
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.verticalBar span {
+  color: #536024;
+  font-weight: bold;
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
+}
+
+.segment {
+  width: 8px;
+  background-color: #536024;
+  margin: 2px 0;
+}
+.segment.segment1 {
+  height: 113px;
+}
+.segment.segment2 {
+  height: 16px;
+}
+.segment.segment3 {
+  height: 7px;
+}
+.segment.segment4, .segment.segment5 {
+  height: 2px;
+}
+
+.verticalBarRight .verticalLine {
+  width: 2px;
+  height: 20vh;
+  background-color: #536024;
+}
+
+.verticalBar .verticalLine {
+  width: 2px;
+  height: 33vh;
+  background-color: #536024;
+}
+
+.barText {
+  font-size: 0.9rem;
+  color: #536024;
+  margin-top: 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.verticalBarRight {
+  position: absolute;
+  right: 2%;
+  top: calc(4vw + 2%);
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  z-index: 2;
+}
+
+.verticalBarRight .segment.segment1 {
+  height: 113px;
+  width: 8px;
+  background-color: #536024;
+}
+
+.verticalBarRight .segment.segment2 {
+  height: 16px;
+  width: 8px;
+  background-color: #536024;
+  margin: 2px 0;
+}
+
+.verticalBarRight .segment.segment3 {
+  height: 7px;
+  width: 8px;
+  background-color: #536024;
+  margin: 2px 0;
+}
+
+.verticalBarRight .segment.segment4 {
+  height: 2px;
+  width: 8px;
+  background-color: #536024;
+  margin: 2px 0;
+}
+
+.verticalBarRight .segment.segment5 {
+  height: 2px;
+  width: 8px;
+  background-color: #536024;
+  margin: 2px 0;
+}
+
+.curvy {
+  position: absolute;
+  bottom: -70%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.Btn {
+  position: absolute;
+  left: 10vw;
+  border: 1px solid #cde543;
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  color: #cde543;
+}
+
+.infoSection h1 {
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  margin-bottom: 2rem;
+  padding-left: 9vw;
+  padding-top: 6vw;
+  color: #fff;
+}
+
+.infoSection h2 {
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  margin: 1rem 0;
+  padding-left: 9vw;
+  color: #fff;
+}
+
+.infoSection p {
+  font-size: clamp(1rem, 1.5vw, 1.6rem);
+  padding-left: 9vw;
+  color: #fff;
+}
+
+.imageSection img {
+  width: 100%;
+  max-width: 950px;
+  margin-bottom: 1rem;
+  transform: translateY(-3vw);
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 1440px) {
+  .verticalBarRight .verticalLine {
+    height: 48vh;
+  }
+  .verticalBar .verticalLine {
+    height: 63vh;
+  }
+}
+@media (min-width: 769px) {
+  .CubeBanner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .infoSection {
+    flex: 1;
+    padding-right: 2rem;
+    padding-bottom: 8vw;
+  }
+  .imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #455725;
+  }
+}
+@media (max-width: 768px) {
+  .Btn {
+    position: absolute;
+    left: 1.3vw;
+    top: calc(10% - 6rem);
+    z-index: 2;
+  }
+  .infoSection {
+    position: relative;
+    padding-bottom: 30vw;
+    text-align: left;
+  }
+  .infoSection h1, .infoSection p {
+    padding-left: 1vw;
+  }
+  .infoSection h1 {
+    margin-top: 30px;
+  }
+  .infoSection h2 {
+    padding-left: 1vw;
+  }
+  .imageSection {
+    transform: translateY(-4vw);
+  }
+}
+@media (max-width: 425px) {
+  .imageSection {
+    transform: translateY(-9vw);
+  }
+  .curvy {
+    height: 0;
+  }
+}
+
+/*# sourceMappingURL=CubeBanner.css.map */

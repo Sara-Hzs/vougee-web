@@ -1,0 +1,93 @@
+.BannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+  margin-bottom: 20rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.CrewBanner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 400px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  margin-bottom: 20rem;
+  background-color: #f0f0f0;
+}
+
+/*.Grid {
+  position: absolute;
+  top:  0;
+  left: 50%;
+  width: 50%;
+  height: 70%;
+  background:
+          radial-gradient(circle at center, transparent 20%, transparent 20%, #f0f0f0 30%, #f0f0f0 100%),
+          repeating-linear-gradient(45deg, transparent, transparent 60px, #b6b4b4 61px),
+          repeating-linear-gradient(-45deg, transparent, transparent 60px, #b6b4b4 61px);
+  background-size: 100% 100%, 85px 85px, 85px 85px;
+  transform: translate(-50%, -50%) rotate(-90deg) scaleY(1.7);
+}*/
+.ovalBtn {
+  background: transparent;
+  border: 1px solid #8c8989;
+  border-radius: 30px;
+  padding: 8px 20px;
+  letter-spacing: 2px;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-weight: bold;
+  cursor: default;
+  margin-bottom: 0.8vw;
+}
+
+.descriptionText {
+  font-size: clamp(0.9rem, 1.2vw, 1.6rem);
+  width: 50%;
+  color: #6c6d70;
+}
+
+.joinText {
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  color: #6c6d70;
+}
+
+@media (max-width: 768px) {
+  .descriptionText {
+    width: 70%;
+  }
+  .Grid {
+    display: none;
+  }
+  .ovalBtn {
+    margin-bottom: 6vw;
+    margin-top: 1vw;
+  }
+}
+@media (max-width: 679px) {
+  .contentWrapper {
+    margin-bottom: 5rem;
+  }
+}
+
+/*# sourceMappingURL=CrewBanner.css.map */

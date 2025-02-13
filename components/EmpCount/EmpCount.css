@@ -1,0 +1,199 @@
+.EmpCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+
+.curved {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  top: 19rem;
+  padding-top: 4vw;
+}
+
+.StatsContainer {
+  position: absolute;
+  top: 25rem;
+  left: 65%;
+  transform: translate(-50%, -40%);
+  width: 92%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.statsBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-left: 1vw;
+  padding-bottom: 1.5em;
+  background: #fdfdfd;
+  border: 1px solid #fdfdfd;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  width: 65%;
+  height: auto;
+  max-height: 220px;
+  border-radius: 20px;
+  position: relative;
+  border-top: none;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: left;
+  position: relative;
+  padding-bottom: 2vw;
+}
+
+.statItem::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  height: 2px;
+  background-color: #dcdcd7;
+  transform: translateX(-50%);
+}
+
+.statItem span:first-child {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.statItem span:last-child {
+  font-size: 1em;
+  color: #494747;
+}
+
+.statsHeader {
+  display: flex;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.designContainer {
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(90% + 8vw);
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.horizontalLine {
+  width: clamp(20%, 90vw, 90%);
+  height: 2px;
+  background-color: #deeb96;
+  margin-left: clamp(3vw, 110px, 7vw);
+}
+
+.rectangles {
+  display: flex;
+  align-items: center;
+}
+
+.rectangle {
+  height: 6px;
+  background-color: #deeb96;
+  margin-right: 3px;
+}
+.rectangle:nth-child(1) {
+  width: 2px;
+}
+.rectangle:nth-child(2) {
+  width: 2px;
+}
+.rectangle:nth-child(3) {
+  width: 7px;
+}
+.rectangle:nth-child(4) {
+  width: 16px;
+}
+.rectangle:nth-child(5) {
+  width: 80px;
+}
+
+.statsHeader span {
+  font-weight: bold;
+  margin-right: 10px;
+  position: relative;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+.statsHeader svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .statItem:last-child {
+    flex-basis: 100%;
+    margin-top: 10px;
+    transform: translateX(20%);
+    align-items: flex-start;
+  }
+  .statItem:last-child::before {
+    left: 13%;
+  }
+  .curved {
+    height: 45%;
+  }
+  .StatsContainer {
+    top: 22rem;
+  }
+  .statsBox {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 680px) {
+  .designContainer {
+    display: none;
+  }
+  .statsHeader svg {
+    display: none;
+  }
+  .StatsContainer {
+    display: none;
+  }
+  .curved {
+    display: none;
+  }
+}
+@media (min-width: 2359px) {
+  .curved {
+    top: 15rem;
+  }
+  .StatsContainer {
+    top: 25rem;
+  }
+}
+@media (min-width: 3800px) {
+  .curved {
+    top: 12rem;
+  }
+  .StatsContainer {
+    top: 27rem;
+  }
+  .statItem {
+    padding-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=EmpCount.css.map */

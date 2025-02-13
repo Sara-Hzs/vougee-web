@@ -1,0 +1,57 @@
+/**
+ * Header Styling:
+ * Represents the main header for the application.
+ * - Features a centered logo, a navigation menu, and a Contact Us button.
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #f0f0f0;
+  color: #333333;
+  z-index: 1;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+}
+.header .logo-container .logo {
+  width: 6vw;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+.header .nav-container ul {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  padding: 0;
+}
+.header .nav-container ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+  font-size: clamp(1rem, 1.3vw, 1.8rem);
+}
+.header .nav-container ul li a:hover {
+  color: #1a1a1a;
+}
+.header .btn-container .contact-btn {
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 25px;
+  background-color: #bbd93a;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.8vw;
+}
+.header .btn-container .contact-btn:hover {
+  background-color: #9fbc24;
+}
+
+/*# sourceMappingURL=Header.css.map */

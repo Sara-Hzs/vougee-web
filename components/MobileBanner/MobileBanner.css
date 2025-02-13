@@ -1,0 +1,181 @@
+/*
+ * MobileBanner  Styling:
+   It's a responsive component. It displays the content in a column-reverse
+ * layout, center-aligning its child elements. As screen size increases, its layout switches to a row format.
+ * Specific styles for h1, h3, p, and the image section are defined for aesthetic and layout purposes.
+ */
+.MobileBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 22vw;
+  z-index: 2;
+  background-color: #fdfdfd;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+  pointer-events: none;
+  user-select: none;
+}
+.MobileBanner.no-margin {
+  margin-top: 0;
+}
+.MobileBanner .ourServiceBtn {
+  position: absolute;
+  left: 5vw;
+  top: 1vw;
+  font-weight: bold;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  background-color: transparent;
+  color: #16171c;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1px solid #8c8989;
+  letter-spacing: 2px;
+}
+.MobileBanner #top {
+  padding-top: 3em;
+}
+.MobileBanner h2, .MobileBanner h1, .MobileBanner h4, .MobileBanner p {
+  align-self: flex-start;
+  padding-left: 5vw;
+}
+.MobileBanner h2, .MobileBanner h1 {
+  width: 70%;
+}
+.MobileBanner h4 {
+  margin-top: 1vw;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  width: 60%;
+}
+.MobileBanner .divider {
+  display: none;
+}
+.MobileBanner p {
+  font-size: clamp(1rem, 1.4vw, 1.9rem);
+  padding-bottom: 4vw;
+  padding-top: 2vw;
+  width: 90%;
+}
+.MobileBanner .imageSection {
+  width: 100%;
+  padding-left: 9vw;
+  margin-top: 6rem;
+  pointer-events: none;
+  user-select: none;
+}
+.MobileBanner .imageSection img {
+  width: 90%;
+}
+.MobileBanner .rightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.MobileBanner .rightSection .circle {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c1c1c2;
+}
+.MobileBanner .rightSection .topLine, .MobileBanner .rightSection .bottomLine {
+  display: none;
+}
+.MobileBanner .rightSection .numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #8d8c8c;
+  padding-bottom: 3vw;
+}
+.MobileBanner .rightSection .numbers span {
+  margin: 0 1vw;
+}
+@media (min-width: 769px) {
+  .MobileBanner {
+    margin-top: 140px;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+  }
+  .MobileBanner #top {
+    padding-top: 1em;
+  }
+  .MobileBanner .imageSection {
+    position: absolute;
+    right: 6vw;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .MobileBanner .imageSection img {
+    max-width: 800px;
+  }
+  .MobileBanner .divider {
+    display: block;
+    align-self: flex-start;
+    margin-left: 12vw;
+    background-color: #c1c1c2;
+    width: 2px;
+    height: 80px;
+  }
+  .MobileBanner h4 {
+    padding-bottom: 0.5vw;
+    width: 40%;
+  }
+  .MobileBanner h2 {
+    margin-top: 1vw;
+    width: 30%;
+  }
+  .MobileBanner h1 {
+    padding-top: 10px;
+    width: 15%;
+  }
+  .MobileBanner p {
+    width: 55%;
+  }
+  .MobileBanner h1, .MobileBanner h2, .MobileBanner h4, .MobileBanner p {
+    align-self: flex-start;
+    padding-left: 12vw;
+  }
+  .MobileBanner .ourServiceBtn {
+    align-self: flex-start;
+    margin-left: 7vw;
+  }
+  .MobileBanner .rightSection {
+    position: absolute;
+    right: 5vw;
+    top: 6vw;
+    flex-direction: column;
+  }
+  .MobileBanner .rightSection .circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c1c1c2;
+    background-color: transparent;
+  }
+  .MobileBanner .rightSection .topCircle {
+    margin-bottom: -10px;
+  }
+  .MobileBanner .rightSection .bottomCircle {
+    margin-top: -10px;
+  }
+  .MobileBanner .rightSection .topLine, .MobileBanner .rightSection .bottomLine {
+    display: block;
+    height: 8vw;
+    width: 2px;
+    background-color: #c1c1c2;
+  }
+  .MobileBanner .rightSection .numbers {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .MobileBanner .rightSection .numbers span {
+    margin: 1vw 0;
+  }
+}
+
+/*# sourceMappingURL=MobileBanner.css.map */

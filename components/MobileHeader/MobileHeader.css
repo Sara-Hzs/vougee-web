@@ -1,0 +1,64 @@
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  background-color: #eeeeee;
+  font-family: "MuseoSansRounded", "Inter", sans-serif;
+}
+.mobile-header.menu-open {
+  background-color: #fff;
+}
+.mobile-header .logo-container {
+  flex-grow: 1;
+  padding-left: 6vw;
+}
+.mobile-header .logo-container img.logo {
+  width: auto;
+  height: 30px;
+}
+.mobile-header .hamburger {
+  height: 35px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.mobile-header .mobile-nav-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  max-height: 0;
+}
+.mobile-header .mobile-nav-container.open {
+  max-height: 500px;
+}
+.mobile-header .mobile-nav-container ul {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mobile-header .mobile-nav-container ul li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.mobile-header .mobile-nav-container ul li:last-child {
+  border-bottom: none;
+}
+.mobile-header .mobile-nav-container ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+/*# sourceMappingURL=MobileHeader.css.map */
