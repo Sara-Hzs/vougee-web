@@ -66,64 +66,76 @@ export const Jobs = () => {
                     </ul>
                 </div>
             </div>
-            <div className="frames-container">
-                {jobs.length > 0 ? jobs.map((job, index) => (
-                    <div
-                        key={job.id}
-                        className={`frame ${openFrame === index ? 'open' : ''}`}
-                        onClick={() => handleFrameClick(index)}
-                    >
-                        {openFrame === index ? (
-                            <div className='frame-content'>
-                                <a href={`mailto:jobs@vougee.gmbh?subject=Application for ${job.name}`}
-                                   className="apply-btn">
-                                    Apply Position
-                                    <div className="icon-arrow">
-                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
-                                    </div>
-                                </a>
-                                <h1 className="number-title">{formatNumber(jobs.length - index)}</h1>
-                                <h1 className="job-title">{job.attributes.Name}</h1>
-                                {/* Description */}
-                                <h3 className="frame-section-title">Description</h3>
-                                <ul>
-                                    {splitStringBySemicolon(job.attributes.Description).map((description, dIndex) => (
-                                        <li key={dIndex}>{description}</li>
-                                    ))}
-                                </ul>
+            {/*<div className="frames-container">*/}
+            {/*    {jobs.length > 0 ? jobs.map((job, index) => (*/}
+            {/*        <div*/}
+            {/*            key={job.id}*/}
+            {/*            className={`frame ${openFrame === index ? 'open' : ''}`}*/}
+            {/*            onClick={() => handleFrameClick(index)}*/}
+            {/*        >*/}
+            {/*            {openFrame === index ? (*/}
+            {/*                <div className='frame-content'>*/}
+            {/*                    <a href={`mailto:jobs@vougee.gmbh?subject=Application for ${job.name}`}*/}
+            {/*                       className="apply-btn">*/}
+            {/*                        Apply Position*/}
+            {/*                        <div className="icon-arrow">*/}
+            {/*                            <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>*/}
+            {/*                        </div>*/}
+            {/*                    </a>*/}
+            {/*                    <h1 className="number-title">{formatNumber(jobs.length - index)}</h1>*/}
+            {/*                    <h1 className="job-title">{job.attributes.Name}</h1>*/}
+            {/*                    /!* Description *!/*/}
+            {/*                    <h3 className="frame-section-title">Description</h3>*/}
+            {/*                    <ul>*/}
+            {/*                        {splitStringBySemicolon(job.attributes.Description).map((description, dIndex) => (*/}
+            {/*                            <li key={dIndex}>{description}</li>*/}
+            {/*                        ))}*/}
+            {/*                    </ul>*/}
 
-                                {/* Requirements */}
-                                <h3 className="frame-section-title">Requirements</h3>
-                                <ul>
-                                    {splitStringBySemicolon(job.attributes.Requirements).map((requirement, rIndex) => (
-                                        <li key={rIndex}>{requirement}</li>
-                                    ))}
-                                </ul>
+            {/*                    /!* Requirements *!/*/}
+            {/*                    <h3 className="frame-section-title">Requirements</h3>*/}
+            {/*                    <ul>*/}
+            {/*                        {splitStringBySemicolon(job.attributes.Requirements).map((requirement, rIndex) => (*/}
+            {/*                            <li key={rIndex}>{requirement}</li>*/}
+            {/*                        ))}*/}
+            {/*                    </ul>*/}
 
-                                {/* Scope of Work */}
-                                <h3 className="frame-section-title">Scope Of Work</h3>
-                                <ul>
-                                    {splitStringBySemicolon(job.attributes.Scope).map((scopeItem, sIndex) => (
-                                        <li key={sIndex}>{scopeItem}</li>
-                                    ))}
-                                </ul>
-                                <a>
-                                    <br/>
-                                </a>
+            {/*                    /!* Scope of Work *!/*/}
+            {/*                    <h3 className="frame-section-title">Scope Of Work</h3>*/}
+            {/*                    <ul>*/}
+            {/*                        {splitStringBySemicolon(job.attributes.Scope).map((scopeItem, sIndex) => (*/}
+            {/*                            <li key={sIndex}>{scopeItem}</li>*/}
+            {/*                        ))}*/}
+            {/*                    </ul>*/}
+            {/*                    <a>*/}
+            {/*                        <br/>*/}
+            {/*                    </a>*/}
 
 
-                            </div>
-                        ) : (
-                            <>
-                                <span className="vertical-text">{job.attributes.Name}</span>
-                                <div className="frame-number">{formatNumber(jobs.length - index)}</div>
-                            </>
-                        )}
+            {/*                </div>*/}
+            {/*            ) : (*/}
+            {/*                <>*/}
+            {/*                    <span className="vertical-text">{job.attributes.Name}</span>*/}
+            {/*                    <div className="frame-number">{formatNumber(jobs.length - index)}</div>*/}
+            {/*                </>*/}
+            {/*            )}*/}
+            {/*        </div>*/}
+            {/*    )) : (*/}
+            {/*        <p>Loading jobs...</p>*/}
+            {/*    )}*/}
+            {/*</div>*/}
+            {/* New no positions message */}
+            <div className="no-positions-container">
+                <div className="no-positions-card">
+                    <div className="message-content">
+                        <h2 className="message-title">No Open Positions Currently</h2>
+                        <p className="message-text">
+                            While we don't have any open positions at the moment, we invite you to check back regularly as new opportunities emerge. VouGee is committed to assembling a diverse team of forward-thinking professionals who share our passion for technology and collaborative culture.
+                        </p>
                     </div>
-                )) : (
-                    <p>Loading jobs...</p>
-                )}
+                </div>
             </div>
+
 
             <h2 className="email">
                 <a href="mailto:jobs@vougee.gmbh" className="custom-email-link">jobs@vougee.gmbh</a>

@@ -285,7 +285,68 @@
   }
 
 
+  .no-positions-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    min-height: 30vh;
+  }
 
+  .no-positions-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .no-positions-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+                    circle,
+                    rgba(187, 217, 58, 0.1) 0%,
+                    transparent 70%
+    );
+    z-index: -1;
+  }
+
+  .message-title {
+    color: #bbd93a;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .message-text {
+    color: #ffffff;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .no-positions-container {
+      padding: 2rem 1rem;
+    }
+
+    .no-positions-card {
+      padding: 2rem 1.5rem;
+    }
+  }
 
   @media (max-width: 900px) {
     flex-direction: column;
